@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏦 Bank Churn Prediction System
 
 A comprehensive **Machine Learning system** to predict customer churn for banking institutions using **52 features** across **10 key churn drivers**.  
@@ -271,3 +272,7 @@ If you find this project helpful, please consider giving it a ⭐ on GitHub!
 > - ✅ Real-time interactivity
 > 
 > The Power BI-related files remain in the repository for reference and can be safely ignored. The Streamlit dashboard provides all the visualization functionality you need!
+=======
+# bank_churn_predictor
+It give churn prediction od different bank users
+>>>>>>> e69522b04f1031de2309a7c68c57f9a5c9d7a3c3
