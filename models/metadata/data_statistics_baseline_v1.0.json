@@ -1,0 +1,1102 @@
+{
+  "version": "v1.0",
+  "timestamp": "2025-10-28T13:25:00.936929",
+  "dataset_info": {
+    "total_samples": 10000,
+    "total_features": 90,
+    "churn_rate": null
+  },
+  "feature_statistics": {
+    "age": {
+      "type": "numerical",
+      "mean": -0.007897234902765091,
+      "std": 1.0002361408879379,
+      "min": -1.705308912105674,
+      "max": 1.7067312614051704,
+      "median": -0.0272563677560782,
+      "q1": -0.8662826399308761,
+      "q3": 0.8677049892303728,
+      "missing_count": 0
+    },
+    "income": {
+      "type": "numerical",
+      "mean": 0.005406922690545096,
+      "std": 0.9974845174826814,
+      "min": -4.008738151733113,
+      "max": 4.467720039840107,
+      "median": -0.00549701916859705,
+      "q1": -0.665573017633609,
+      "q3": 0.6754038764845165,
+      "missing_count": 0
+    },
+    "total_transactions": {
+      "type": "numerical",
+      "mean": -0.011550757994218981,
+      "std": 0.9991390054338937,
+      "min": -3.111347487742129,
+      "max": 4.871182718453685,
+      "median": -0.0213357950211687,
+      "q1": -0.7938387182014088,
+      "q3": 0.7511671281590714,
+      "missing_count": 0
+    },
+    "login_frequency": {
+      "type": "numerical",
+      "mean": -0.006141242618655154,
+      "std": 0.9840886629328851,
+      "min": -1.0138201523262769,
+      "max": 7.872317349301621,
+      "median": -0.31093170064600195,
+      "q1": -0.7182957769210666,
+      "q3": 0.40626083945962527,
+      "missing_count": 0
+    },
+    "app_usage_minutes": {
+      "type": "numerical",
+      "mean": 0.004793745377003686,
+      "std": 0.9964386022787147,
+      "min": -2.055429652003256,
+      "max": 5.759847287695291,
+      "median": -0.14665363765007006,
+      "q1": -0.7175247780922086,
+      "q3": 0.5545694031178569,
+      "missing_count": 0
+    },
+    "days_since_last_login": {
+      "type": "numerical",
+      "mean": -0.007277893248977504,
+      "std": 0.9905089154438529,
+      "min": -0.9999509114136176,
+      "max": 7.1076132650597135,
+      "median": -0.30813215733416005,
+      "q1": -0.7130635167932468,
+      "q3": 0.37226034737151176,
+      "missing_count": 0
+    },
+    "customer_service_calls": {
+      "type": "numerical",
+      "mean": 0.003375240695487168,
+      "std": 1.0033917505411143,
+      "min": -1.4070534649311792,
+      "max": 5.624697984000252,
+      "median": -0.000703175144893,
+      "q1": -0.7038783200380362,
+      "q3": 0.70247196974825,
+      "missing_count": 0
+    },
+    "activity_score": {
+      "type": "numerical",
+      "mean": -0.0006979321524276366,
+      "std": 0.9929255171593668,
+      "min": -2.3101440980954004,
+      "max": 5.100276527104115,
+      "median": -0.12209959336155435,
+      "q1": -0.7132455481862496,
+      "q3": 0.5524856170619716,
+      "missing_count": 0
+    },
+    "avg_monthly_fees": {
+      "type": "numerical",
+      "mean": -0.0017569799541379296,
+      "std": 0.9933181816325285,
+      "min": -0.978041993953468,
+      "max": 8.262032643039843,
+      "median": -0.3147177227559804,
+      "q1": -0.697998999868973,
+      "q3": 0.3624609908935258,
+      "missing_count": 0
+    },
+    "overdraft_frequency": {
+      "type": "numerical",
+      "mean": 0.002868648334935413,
+      "std": 1.0041992796104477,
+      "min": -0.9907648244226672,
+      "max": 6.072741125920807,
+      "median": 0.0183074541978289,
+      "q1": -0.9907648244226672,
+      "q3": 1.0273797328183254,
+      "missing_count": 0
+    },
+    "penalty_charges": {
+      "type": "numerical",
+      "mean": 0.011516896522760015,
+      "std": 1.008687754336081,
+      "min": -1.009025274957634,
+      "max": 10.16335053194453,
+      "median": -0.29264329560933644,
+      "q1": -0.7166123988816802,
+      "q3": 0.40524187501359954,
+      "missing_count": 0
+    },
+    "fee_to_balance_ratio": {
+      "type": "numerical",
+      "mean": -0.006736105740154693,
+      "std": 1.00256979015047,
+      "min": -67.25891826023741,
+      "max": 15.795072160904784,
+      "median": -0.0561779046801346,
+      "q1": -0.11404320002743347,
+      "q3": 0.0545444692992304,
+      "missing_count": 0
+    },
+    "overdraft_amount": {
+      "type": "numerical",
+      "mean": 0.006706447536711928,
+      "std": 1.0066214905300865,
+      "min": -1.0202722166432745,
+      "max": 9.05236132200186,
+      "median": -0.2998613744954898,
+      "q1": -0.7190830790302907,
+      "q3": 0.4175044522003023,
+      "missing_count": 0
+    },
+    "num_complaints": {
+      "type": "numerical",
+      "mean": 0.012901452915306578,
+      "std": 1.016214382344468,
+      "min": -0.7182635805733152,
+      "max": 7.965406650883,
+      "median": -0.7182635805733152,
+      "q1": -0.7182635805733152,
+      "q3": 0.7290147913360707,
+      "missing_count": 0
+    },
+    "complaint_resolution_days": {
+      "type": "numerical",
+      "mean": -0.006434524612135232,
+      "std": 0.9942742816383471,
+      "min": -0.9843645961511712,
+      "max": 9.048318004106736,
+      "median": -0.3160074967894998,
+      "q1": -0.7084614449146561,
+      "q3": 0.3777629844038928,
+      "missing_count": 0
+    },
+    "satisfaction_score": {
+      "type": "numerical",
+      "mean": 0.0014197401089710625,
+      "std": 0.9949614103060148,
+      "min": -3.743698303874672,
+      "max": 4.024352793285589,
+      "median": 0.0112115739915403,
+      "q1": -0.6655026010453349,
+      "q3": 0.6669386640735647,
+      "missing_count": 0
+    },
+    "escalation_count": {
+      "type": "numerical",
+      "mean": 0.0037986032420594825,
+      "std": 1.0068460012934939,
+      "min": -0.4468944990658225,
+      "max": 8.490995482250627,
+      "median": -0.4468944990658225,
+      "q1": -0.4468944990658225,
+      "q3": -0.4468944990658225,
+      "missing_count": 0
+    },
+    "service_quality_rating": {
+      "type": "numerical",
+      "mean": 0.005080781544228793,
+      "std": 0.9918211554923314,
+      "min": -3.913096531618896,
+      "max": 3.724510450992976,
+      "median": 0.0053012472426152,
+      "q1": -0.6552765539095377,
+      "q3": 0.6558404154681964,
+      "missing_count": 0
+    },
+    "num_products": {
+      "type": "numerical",
+      "mean": 0.0015161455601261271,
+      "std": 1.001440123631397,
+      "min": -1.573292585084815,
+      "max": 5.334589552768338,
+      "median": -0.3173140145660598,
+      "q1": -0.9453032998254374,
+      "q3": 0.3106752706933177,
+      "missing_count": 0
+    },
+    "has_credit_card": {
+      "type": "numerical",
+      "mean": -0.007375260731599525,
+      "std": 1.003286010924124,
+      "min": -1.536929333813812,
+      "max": 0.6506480018300845,
+      "median": 0.6506480018300845,
+      "q1": -1.536929333813812,
+      "q3": 0.6506480018300845,
+      "missing_count": 0
+    },
+    "has_mortgage": {
+      "type": "numerical",
+      "mean": 0.002021769456212178,
+      "std": 1.0007347125453792,
+      "min": -0.7163702520966808,
+      "max": 1.3959261946921842,
+      "median": -0.7163702520966808,
+      "q1": -0.7163702520966808,
+      "q3": 1.3959261946921842,
+      "missing_count": 0
+    },
+    "has_investment_account": {
+      "type": "numerical",
+      "mean": -0.0003779836602408004,
+      "std": 0.999978600272815,
+      "min": -0.8289472425741692,
+      "max": 1.2063493894914863,
+      "median": -0.8289472425741692,
+      "q1": -0.8289472425741692,
+      "q3": 1.2063493894914863,
+      "missing_count": 0
+    },
+    "has_insurance": {
+      "type": "numerical",
+      "mean": 0.001571486300557131,
+      "std": 1.0000622398800998,
+      "min": -0.991464993260574,
+      "max": 1.0086084801757425,
+      "median": -0.991464993260574,
+      "q1": -0.991464993260574,
+      "q3": 1.0086084801757425,
+      "missing_count": 0
+    },
+    "product_diversity_score": {
+      "type": "numerical",
+      "mean": -0.001103796104736177,
+      "std": 1.0074259585048613,
+      "min": -2.411406868142719,
+      "max": 4.824179637819726,
+      "median": -0.0856826340833612,
+      "q1": -0.6025102416521078,
+      "q3": 0.6895587772697576,
+      "missing_count": 0
+    },
+    "tenure_months": {
+      "type": "numerical",
+      "mean": 0.001773600415101076,
+      "std": 1.001791476258521,
+      "min": -1.7192408737278224,
+      "max": 1.723051983677092,
+      "median": 0.0019055549746349,
+      "q1": -0.8586676593765937,
+      "q3": 0.8624787693258635,
+      "missing_count": 0
+    },
+    "balance_growth_rate": {
+      "type": "numerical",
+      "mean": -0.00686337928776877,
+      "std": 0.9960501051747126,
+      "min": -3.556076220449789,
+      "max": 4.154080897857164,
+      "median": -0.00751393660511235,
+      "q1": -0.6739899175575895,
+      "q3": 0.6540764534911234,
+      "missing_count": 0
+    },
+    "is_new_customer": {
+      "type": "numerical",
+      "mean": -0.001269622108545324,
+      "std": 0.997179262431917,
+      "min": -0.2116036847575794,
+      "max": 4.725815626252609,
+      "median": -0.2116036847575794,
+      "q1": -0.2116036847575794,
+      "q3": -0.2116036847575794,
+      "missing_count": 0
+    },
+    "avg_account_balance": {
+      "type": "numerical",
+      "mean": 0.00018836886085307186,
+      "std": 1.001471410386077,
+      "min": -3.5836858924020527,
+      "max": 4.144593834591947,
+      "median": 0.00314057797666035,
+      "q1": -0.6667471392068172,
+      "q3": 0.6734048762063783,
+      "missing_count": 0
+    },
+    "balance_trend": {
+      "type": "numerical",
+      "mean": 0.0016554913430332995,
+      "std": 0.9931727845640143,
+      "min": -4.014946421424625,
+      "max": 3.870852135659541,
+      "median": 0.00014488978687210002,
+      "q1": -0.6635141728113855,
+      "q3": 0.665925351171417,
+      "missing_count": 0
+    },
+    "balance_volatility": {
+      "type": "numerical",
+      "mean": 0.007904513742454893,
+      "std": 1.0142478592927087,
+      "min": -1.013484581489838,
+      "max": 8.984617750883412,
+      "median": -0.2964908035881699,
+      "q1": -0.7190105295673064,
+      "q3": 0.3935590335169623,
+      "missing_count": 0
+    },
+    "salary_consistency": {
+      "type": "numerical",
+      "mean": 0.0017510213690513474,
+      "std": 0.9961699698231771,
+      "min": -3.6919371619787062,
+      "max": 4.124702230781778,
+      "median": -0.00539306637114345,
+      "q1": -0.6731761299753466,
+      "q3": 0.6735594017663923,
+      "missing_count": 0
+    },
+    "withdrawal_ratio": {
+      "type": "numerical",
+      "mean": -0.004854031139604907,
+      "std": 0.9994821626919762,
+      "min": -1.78513101771506,
+      "max": 4.112793405792065,
+      "median": -0.13777433539446304,
+      "q1": -0.7857684547792889,
+      "q3": 0.6528750852194195,
+      "missing_count": 0
+    },
+    "digital_adoption": {
+      "type": "numerical",
+      "mean": -0.00019502496235364683,
+      "std": 0.9992842301631057,
+      "min": -3.781903369580835,
+      "max": 4.12947735270539,
+      "median": 0.0036680009805999,
+      "q1": -0.6777334956868379,
+      "q3": 0.6789639367316394,
+      "missing_count": 0
+    },
+    "family_size": {
+      "type": "numerical",
+      "mean": 0.00207971647463502,
+      "std": 1.0057232552918811,
+      "min": -1.5923394399270396,
+      "max": 4.737232439396799,
+      "median": -0.3264250640622721,
+      "q1": -0.959382251994656,
+      "q3": 0.3065321238701116,
+      "missing_count": 0
+    },
+    "credit_score": {
+      "type": "numerical",
+      "mean": -0.005152387028401007,
+      "std": 1.005482443493632,
+      "min": -3.717378074327268,
+      "max": 4.001343311666005,
+      "median": -0.00786124906895655,
+      "q1": -0.6851457240587586,
+      "q3": 0.6721298320582461,
+      "missing_count": 0
+    },
+    "credit_utilization": {
+      "type": "numerical",
+      "mean": -0.002194641058287002,
+      "std": 0.9996647157599364,
+      "min": -1.7884375662165146,
+      "max": 3.662434486135175,
+      "median": -0.13434382654003058,
+      "q1": -0.7760465258566515,
+      "q3": 0.6415786870632754,
+      "missing_count": 0
+    },
+    "num_loan_defaults": {
+      "type": "numerical",
+      "mean": -0.0040205804040078395,
+      "std": 0.9904376335586548,
+      "min": -0.3247391864775585,
+      "max": 5.860769127380698,
+      "median": -0.3247391864775585,
+      "q1": -0.3247391864775585,
+      "q3": -0.3247391864775585,
+      "missing_count": 0
+    },
+    "debt_to_income": {
+      "type": "numerical",
+      "mean": -0.0012470381674900765,
+      "std": 0.9897873441994008,
+      "min": -1.2036886498855508,
+      "max": 4.375949995144536,
+      "median": -0.25792904029453995,
+      "q1": -0.7985780403803844,
+      "q3": 0.5815156526503865,
+      "missing_count": 0
+    },
+    "credit_inquiry_count": {
+      "type": "numerical",
+      "mean": 0.0012419574651873926,
+      "std": 1.007642326954251,
+      "min": -0.9983316228884234,
+      "max": 6.077937655504858,
+      "median": 0.0125639883106166,
+      "q1": -0.9983316228884234,
+      "q3": 1.0234595995096567,
+      "missing_count": 0
+    },
+    "promotions_sent": {
+      "type": "numerical",
+      "mean": -0.0014443496267367636,
+      "std": 1.0005819410647496,
+      "min": -2.253377997659618,
+      "max": 4.486920260445384,
+      "median": -0.0066119116246172,
+      "q1": -0.9053183460386176,
+      "q3": 0.4427413055823828,
+      "missing_count": 0
+    },
+    "promotion_response_rate": {
+      "type": "numerical",
+      "mean": -0.0005689633637858677,
+      "std": 1.0033980375263216,
+      "min": -1.648324317614961,
+      "max": 5.353825903823849,
+      "median": -0.1649861573346825,
+      "q1": -0.7713601499555776,
+      "q3": 0.5927873428868796,
+      "missing_count": 0
+    },
+    "reward_points": {
+      "type": "numerical",
+      "mean": -0.005640806324519934,
+      "std": 0.9999584327983663,
+      "min": -3.2266281854729195,
+      "max": 4.053566896002087,
+      "median": -0.025852761720977,
+      "q1": -0.6848359371993182,
+      "q3": 0.6645105649706184,
+      "missing_count": 0
+    },
+    "customer_since": {
+      "type": "numerical",
+      "mean": 2449.65,
+      "std": 2330.3736592313185,
+      "min": 0.0,
+      "max": 6999.0,
+      "median": 1999.5,
+      "q1": 0.0,
+      "q3": 4499.25,
+      "missing_count": 0
+    },
+    "tenure_segment": {
+      "type": "numerical",
+      "mean": 0.9138,
+      "std": 0.5614277158352718,
+      "min": 0.0,
+      "max": 3.0,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "missing_count": 0
+    },
+    "age_group": {
+      "type": "numerical",
+      "mean": 1.9448,
+      "std": 1.2737798913160594,
+      "min": 0.0,
+      "max": 4.0,
+      "median": 2.0,
+      "q1": 1.0,
+      "q3": 3.0,
+      "missing_count": 0
+    },
+    "income_bracket": {
+      "type": "numerical",
+      "mean": 1.0534,
+      "std": 1.0319180808051331,
+      "min": 0.0,
+      "max": 3.0,
+      "median": 1.0,
+      "q1": 0.0,
+      "q3": 2.0,
+      "missing_count": 0
+    },
+    "account_type_Fixed Deposit": {
+      "type": "numerical",
+      "mean": 0.1128,
+      "std": 0.31636398122552084,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "account_type_Current Account": {
+      "type": "numerical",
+      "mean": 0.1115,
+      "std": 0.31476603655060464,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Vadodara": {
+      "type": "numerical",
+      "mean": 0.0507,
+      "std": 0.2193953587301774,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "occupation_type_Service": {
+      "type": "numerical",
+      "mean": 0.1999,
+      "std": 0.3999449782139537,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "occupation_type_Business": {
+      "type": "numerical",
+      "mean": 0.1971,
+      "std": 0.3978283759885337,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Chennai": {
+      "type": "numerical",
+      "mean": 0.0537,
+      "std": 0.22543600453169393,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Hyderabad": {
+      "type": "numerical",
+      "mean": 0.0516,
+      "std": 0.22122914417730624,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "marital_status_Divorced": {
+      "type": "numerical",
+      "mean": 0.1473,
+      "std": 0.3544224478318956,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Mumbai": {
+      "type": "numerical",
+      "mean": 0.0482,
+      "std": 0.21419931870763143,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Nagpur": {
+      "type": "numerical",
+      "mean": 0.0498,
+      "std": 0.21754239234973705,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Indore": {
+      "type": "numerical",
+      "mean": 0.0512,
+      "std": 0.22041646567766704,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "occupation_type_Student": {
+      "type": "numerical",
+      "mean": 0.1945,
+      "std": 0.3958350900840578,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "account_type_Student Account": {
+      "type": "numerical",
+      "mean": 0.1097,
+      "std": 0.31253108256260975,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "account_type_Basic Savings": {
+      "type": "numerical",
+      "mean": 0.1128,
+      "std": 0.31636398122552084,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Kolkata": {
+      "type": "numerical",
+      "mean": 0.0567,
+      "std": 0.23128004463399904,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "account_type_Recurring Deposit": {
+      "type": "numerical",
+      "mean": 0.1073,
+      "std": 0.30950975692046107,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "education_level_PhD": {
+      "type": "numerical",
+      "mean": 0.1024,
+      "std": 0.30318877344524864,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "marital_status_Married": {
+      "type": "numerical",
+      "mean": 0.5079,
+      "std": 0.49996258485873313,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0,
+      "q1": 0.0,
+      "q3": 1.0,
+      "missing_count": 0
+    },
+    "region_Lucknow": {
+      "type": "numerical",
+      "mean": 0.0511,
+      "std": 0.22021271390166458,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Kanpur": {
+      "type": "numerical",
+      "mean": 0.0455,
+      "std": 0.2084084772972082,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Bhopal": {
+      "type": "numerical",
+      "mean": 0.045,
+      "std": 0.2073144903999549,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Visakhapatnam": {
+      "type": "numerical",
+      "mean": 0.0525,
+      "std": 0.223044221786818,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Surat": {
+      "type": "numerical",
+      "mean": 0.0525,
+      "std": 0.223044221786818,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Ahmedabad": {
+      "type": "numerical",
+      "mean": 0.0483,
+      "std": 0.2144101377517329,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "occupation_type_Professional": {
+      "type": "numerical",
+      "mean": 0.2036,
+      "std": 0.40269499168183426,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "account_type_Senior Citizen Account": {
+      "type": "numerical",
+      "mean": 0.1149,
+      "std": 0.31891716920868596,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Thane": {
+      "type": "numerical",
+      "mean": 0.0486,
+      "std": 0.21504107576560028,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "occupation_type_Retired": {
+      "type": "numerical",
+      "mean": 0.2049,
+      "std": 0.4036487126553519,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "account_type_Salary Account": {
+      "type": "numerical",
+      "mean": 0.1118,
+      "std": 0.3151359882163681,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "education_level_Master": {
+      "type": "numerical",
+      "mean": 0.2015,
+      "std": 0.4011406753049838,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Bangalore": {
+      "type": "numerical",
+      "mean": 0.0522,
+      "std": 0.22244124619953257,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Ludhiana": {
+      "type": "numerical",
+      "mean": 0.0498,
+      "std": 0.21754239234973707,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "education_level_Bachelor": {
+      "type": "numerical",
+      "mean": 0.405,
+      "std": 0.49091659160186374,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 1.0,
+      "missing_count": 0
+    },
+    "account_type_Savings Account": {
+      "type": "numerical",
+      "mean": 0.111,
+      "std": 0.31414784558689673,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "marital_status_Single": {
+      "type": "numerical",
+      "mean": 0.2955,
+      "std": 0.45629000652765306,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 1.0,
+      "missing_count": 0
+    },
+    "marital_status_Widowed": {
+      "type": "numerical",
+      "mean": 0.0493,
+      "std": 0.2165044974584638,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Delhi": {
+      "type": "numerical",
+      "mean": 0.0477,
+      "std": 0.21314139186298972,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Pune": {
+      "type": "numerical",
+      "mean": 0.0468,
+      "std": 0.21122078832856916,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Jaipur": {
+      "type": "numerical",
+      "mean": 0.0458,
+      "std": 0.20906154757168355,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "account_type_NRI Account": {
+      "type": "numerical",
+      "mean": 0.1082,
+      "std": 0.31064837073614937,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "region_Patna": {
+      "type": "numerical",
+      "mean": 0.0523,
+      "std": 0.22264246442827715,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_count": 0
+    },
+    "education_level_High School": {
+      "type": "numerical",
+      "mean": 0.2911,
+      "std": 0.4542922276936006,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 1.0,
+      "missing_count": 0
+    },
+    "dataset_split": {
+      "type": "categorical",
+      "unique_categories": 3,
+      "top_category": "train",
+      "top_category_count": 7000,
+      "missing_count": 0
+    },
+    "customer_id": {
+      "type": "categorical",
+      "unique_categories": 10000,
+      "top_category": "CUST_009161",
+      "top_category_count": 1,
+      "missing_count": 0
+    }
+  },
+  "correlation_analysis": {
+    "top_correlations": [
+      {
+        "feature1": "app_usage_minutes",
+        "feature2": "activity_score",
+        "correlation": 0.8541675214727776
+      },
+      {
+        "feature1": "num_products",
+        "feature2": "product_diversity_score",
+        "correlation": 0.8164166349800692
+      },
+      {
+        "feature1": "marital_status_Married",
+        "feature2": "marital_status_Single",
+        "correlation": -0.6579617814287934
+      },
+      {
+        "feature1": "tenure_months",
+        "feature2": "customer_since",
+        "correlation": -0.6077894591636497
+      },
+      {
+        "feature1": "education_level_Bachelor",
+        "feature2": "education_level_High School",
+        "correlation": -0.5286857969119162
+      },
+      {
+        "feature1": "login_frequency",
+        "feature2": "activity_score",
+        "correlation": 0.5006580858399288
+      },
+      {
+        "feature1": "marital_status_Divorced",
+        "feature2": "marital_status_Married",
+        "correlation": -0.4222461183251698
+      },
+      {
+        "feature1": "education_level_Master",
+        "feature2": "education_level_Bachelor",
+        "correlation": -0.4144470891583161
+      },
+      {
+        "feature1": "is_new_customer",
+        "feature2": "tenure_segment",
+        "correlation": 0.4081274011539806
+      },
+      {
+        "feature1": "age",
+        "feature2": "has_mortgage",
+        "correlation": 0.40484689322272466
+      },
+      {
+        "feature1": "has_investment_account",
+        "feature2": "product_diversity_score",
+        "correlation": 0.36938780171637564
+      },
+      {
+        "feature1": "has_credit_card",
+        "feature2": "product_diversity_score",
+        "correlation": 0.3586850584867212
+      },
+      {
+        "feature1": "tenure_months",
+        "feature2": "is_new_customer",
+        "correlation": -0.34983600888035227
+      },
+      {
+        "feature1": "education_level_Master",
+        "feature2": "education_level_High School",
+        "correlation": -0.3219057094262837
+      },
+      {
+        "feature1": "education_level_PhD",
+        "feature2": "education_level_Bachelor",
+        "correlation": -0.27866189433590155
+      },
+      {
+        "feature1": "marital_status_Divorced",
+        "feature2": "marital_status_Single",
+        "correlation": -0.26917919240483695
+      },
+      {
+        "feature1": "has_insurance",
+        "feature2": "product_diversity_score",
+        "correlation": 0.25667972393226773
+      },
+      {
+        "feature1": "occupation_type_Professional",
+        "feature2": "occupation_type_Retired",
+        "correlation": -0.25667487761969454
+      },
+      {
+        "feature1": "occupation_type_Service",
+        "feature2": "occupation_type_Retired",
+        "correlation": -0.25374317183669354
+      },
+      {
+        "feature1": "occupation_type_Service",
+        "feature2": "occupation_type_Professional",
+        "correlation": -0.2527304222756503
+      }
+    ]
+  },
+  "data_quality": {
+    "missing_values_total": 0,
+    "missing_values_percentage": 0.0,
+    "duplicate_rows": 0
+  }
+}

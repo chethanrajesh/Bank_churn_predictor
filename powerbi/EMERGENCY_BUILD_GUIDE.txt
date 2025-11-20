@@ -1,0 +1,44 @@
+🚨 EMERGENCY AUTOMATION GUIDE
+===============================
+
+YOUR DATA IS READY! Here's the fastest way to build your dashboard:
+
+IMMEDIATE ACTIONS (10 MINUTES):
+
+1. OPEN POWER BI DESKTOP
+   - Install from: https://powerbi.microsoft.com/desktop/
+
+2. IMPORT DATA (1 minute):
+   - Click 'Get Data' → 'Text/CSV'
+   - Navigate to: ../powerbi/data/
+   - Load ALL 5 CSV files
+
+3. BUILD 5 PAGES (9 minutes):
+
+PAGE 1: Executive Overview (2 min)
+• 4 Cards: Total Customers, High Risk Count, Expected Loss, Model AUC
+• Pie Chart: Risk segments
+• Gauge: Avg probability
+
+PAGE 2: Risk Analysis (2 min)  
+• Bar Chart: Risk segments
+• Scatter: Probability vs Loss
+• Table: High-risk customers
+
+PAGE 3: Driver Analysis (2 min)
+• Bar: Top 10 features from shap_values_summary
+• Treemap: Driver categories  
+• Waterfall: Feature impact
+
+PAGE 4: Individual Analysis (2 min)
+• Slicers: Risk, Region, Account type
+• Table: Customer details
+
+PAGE 5: Business Impact (1 min)
+• Cards: Financial metrics
+• Stacked Bar: Loss by segment
+• Matrix: Region × Segment × Loss
+
+4. SAVE: bank_churn_dashboard.pbix
+
+DONE! Your professional dashboard is ready! 🎉

@@ -1,0 +1,13 @@
+demographic_group,metric_name,metric_value,model_version
+gender_male,selection_rate,0.15,v1.0
+gender_female,selection_rate,0.12,v1.0
+age_young,selection_rate,0.18,v1.0
+age_senior,selection_rate,0.1,v1.0
+gender_male,precision,0.78,v1.0
+gender_female,precision,0.75,v1.0
+age_young,precision,0.7,v1.0
+age_senior,precision,0.82,v1.0
+gender_male,recall,0.72,v1.0
+gender_female,recall,0.68,v1.0
+age_young,recall,0.65,v1.0
+age_senior,recall,0.75,v1.0

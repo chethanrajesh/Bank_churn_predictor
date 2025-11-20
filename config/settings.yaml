@@ -1,0 +1,110 @@
+# Project Settings
+project:
+  name: "bank-churn-prediction"
+  version: "1.0.0"
+  description: "Bank Customer Churn Prediction System"
+  authors: ["Bank Analytics Team"]
+
+# Data Configuration
+data:
+  raw_path: "./data/raw"
+  processed_path: "./data/processed"
+  train_size: 0.7
+  val_size: 0.15
+  test_size: 0.15
+  random_state: 42
+  target_column: "churn_risk"
+  customer_id_column: "customer_id"
+
+# Feature Engineering
+features:
+  total_features: 52
+  categorical_features:
+    - "occupation_type"
+    - "region"
+    - "account_type"
+    - "tenure_segment"
+    - "age_group"
+    - "income_bracket"
+    - "digital_adoption"
+    - "maturity_status"
+  numerical_features:
+    - "tenure_months"
+    - "avg_account_balance"
+    - "total_transactions"
+    - "login_frequency"
+    - "avg_fees"
+    - "overdraft_frequency"
+    - "num_complaints"
+    - "num_products"
+    - "credit_card_holder"
+    - "investment_account"
+    - "balance_volatility"
+    - "salary_consistency"
+    - "credit_utilization"
+    - "debt_to_income"
+    - "reward_points"
+    - "promotions_sent"
+  date_features:
+    - "customer_since"
+    - "last_login_date"
+
+# Model Configuration
+model:
+  primary_model: "xgboost"
+  alternative_models: ["random_forest", "lightgbm"]
+  validation_metric: "roc_auc"
+  hyperparameter_tuning: true
+  cross_validation_folds: 5
+  early_stopping_rounds: 50
+
+# Preprocessing
+preprocessing:
+  scaling_method: "standard"
+  imputation_method: "median"
+  outlier_handling: "clip"
+  categorical_encoding: "onehot"
+  smote_sampling: true
+
+# Risk Segmentation
+risk_segmentation:
+  low_risk_threshold: 0.3
+  medium_risk_threshold: 0.7
+  high_risk_threshold: 1.0
+  segments: ["low", "medium", "high"]
+
+# Business Rules
+business:
+  retention_budget_per_customer: 100.0
+  max_retention_campaign_cost: 50000.0
+  expected_retention_rate: 0.25
+  minimum_precision: 0.70
+  minimum_recall: 0.65
+
+# SHAP Configuration
+shap:
+  n_samples: 1000
+  top_features_display: 15
+  interaction_depth: 2
+  background_samples: 100
+
+# Fairness & Bias
+fairness:
+  protected_attributes: ["age_group", "region", "income_bracket"]
+  fairness_metrics: ["demographic_parity", "equal_odds", "predictive_equality"]
+  bias_threshold: 0.8
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_path: "./logs"
+  max_file_size: "10MB"
+  backup_count: 5
+
+# API Settings (if applicable)
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+  workers: 4

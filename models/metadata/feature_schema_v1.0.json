@@ -1,0 +1,944 @@
+{
+  "version": "v1.0",
+  "total_features": 88,
+  "feature_categories": {
+    "engagement": [
+      "total_transactions",
+      "login_frequency",
+      "app_usage_minutes",
+      "days_since_last_login",
+      "customer_service_calls",
+      "activity_score",
+      "overdraft_frequency"
+    ],
+    "fees": [
+      "avg_monthly_fees",
+      "penalty_charges",
+      "fee_to_balance_ratio",
+      "overdraft_amount",
+      "withdrawal_ratio"
+    ],
+    "service": [
+      "num_complaints",
+      "complaint_resolution_days",
+      "satisfaction_score",
+      "escalation_count",
+      "service_quality_rating",
+      "occupation_type_Service"
+    ],
+    "products": [
+      "num_products",
+      "has_credit_card",
+      "has_mortgage",
+      "has_investment_account",
+      "has_insurance",
+      "product_diversity_score"
+    ],
+    "tenure": [
+      "tenure_months",
+      "is_new_customer",
+      "customer_since",
+      "tenure_segment",
+      "age_group"
+    ],
+    "balance": [
+      "balance_growth_rate",
+      "avg_account_balance",
+      "balance_trend",
+      "balance_volatility",
+      "salary_consistency",
+      "account_type_Salary Account"
+    ],
+    "demographics": [
+      "age",
+      "income",
+      "family_size",
+      "debt_to_income",
+      "income_bracket",
+      "region_Vadodara",
+      "occupation_type_Business",
+      "region_Chennai",
+      "region_Hyderabad",
+      "marital_status_Divorced",
+      "region_Mumbai",
+      "region_Nagpur",
+      "region_Indore",
+      "occupation_type_Student",
+      "region_Kolkata",
+      "education_level_PhD",
+      "marital_status_Married",
+      "region_Lucknow",
+      "region_Kanpur",
+      "region_Bhopal",
+      "region_Visakhapatnam",
+      "region_Surat",
+      "region_Ahmedabad",
+      "occupation_type_Professional",
+      "region_Thane",
+      "occupation_type_Retired",
+      "education_level_Master",
+      "region_Bangalore",
+      "region_Ludhiana",
+      "education_level_Bachelor",
+      "marital_status_Single",
+      "marital_status_Widowed",
+      "region_Delhi",
+      "region_Pune",
+      "region_Jaipur",
+      "region_Patna",
+      "education_level_High School"
+    ],
+    "credit": [
+      "credit_score",
+      "credit_utilization",
+      "num_loan_defaults",
+      "credit_inquiry_count"
+    ],
+    "personalization": [
+      "promotions_sent",
+      "promotion_response_rate",
+      "reward_points"
+    ],
+    "contract": [],
+    "other": [
+      "digital_adoption",
+      "account_type_Fixed Deposit",
+      "account_type_Current Account",
+      "account_type_Student Account",
+      "account_type_Basic Savings",
+      "account_type_Recurring Deposit",
+      "account_type_Senior Citizen Account",
+      "account_type_Savings Account",
+      "account_type_NRI Account"
+    ]
+  },
+  "feature_details": {
+    "age": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 62,
+      "min": -1.705308912105674,
+      "max": 1.7067312614051704,
+      "mean": -0.007897234902765091,
+      "std": 1.0002361408879379,
+      "median": -0.0272563677560782
+    },
+    "income": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -4.008738151733113,
+      "max": 4.467720039840107,
+      "mean": 0.005406922690545096,
+      "std": 0.9974845174826814,
+      "median": -0.00549701916859705
+    },
+    "total_transactions": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 30,
+      "min": -3.111347487742129,
+      "max": 4.871182718453685,
+      "mean": -0.011550757994218981,
+      "std": 0.9991390054338937,
+      "median": -0.0213357950211687
+    },
+    "login_frequency": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -1.0138201523262769,
+      "max": 7.872317349301621,
+      "mean": -0.006141242618655154,
+      "std": 0.9840886629328851,
+      "median": -0.31093170064600195
+    },
+    "app_usage_minutes": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -2.055429652003256,
+      "max": 5.759847287695291,
+      "mean": 0.004793745377003686,
+      "std": 0.9964386022787147,
+      "median": -0.14665363765007006
+    },
+    "days_since_last_login": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -0.9999509114136176,
+      "max": 7.1076132650597135,
+      "mean": -0.007277893248977504,
+      "std": 0.9905089154438529,
+      "median": -0.30813215733416005
+    },
+    "customer_service_calls": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 11,
+      "min": -1.4070534649311792,
+      "max": 5.624697984000252,
+      "mean": 0.003375240695487168,
+      "std": 1.0033917505411143,
+      "median": -0.000703175144893
+    },
+    "activity_score": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -2.3101440980954004,
+      "max": 5.100276527104115,
+      "mean": -0.0006979321524276366,
+      "std": 0.9929255171593668,
+      "median": -0.12209959336155435
+    },
+    "avg_monthly_fees": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -0.978041993953468,
+      "max": 8.262032643039843,
+      "mean": -0.0017569799541379296,
+      "std": 0.9933181816325285,
+      "median": -0.3147177227559804
+    },
+    "overdraft_frequency": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 8,
+      "min": -0.9907648244226672,
+      "max": 6.072741125920807,
+      "mean": 0.002868648334935413,
+      "std": 1.0041992796104477,
+      "median": 0.0183074541978289
+    },
+    "penalty_charges": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -1.009025274957634,
+      "max": 10.16335053194453,
+      "mean": 0.011516896522760015,
+      "std": 1.008687754336081,
+      "median": -0.29264329560933644
+    },
+    "fee_to_balance_ratio": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -67.25891826023741,
+      "max": 15.795072160904784,
+      "mean": -0.006736105740154693,
+      "std": 1.00256979015047,
+      "median": -0.0561779046801346
+    },
+    "overdraft_amount": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -1.0202722166432745,
+      "max": 9.05236132200186,
+      "mean": 0.006706447536711928,
+      "std": 1.0066214905300865,
+      "median": -0.2998613744954898
+    },
+    "num_complaints": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 7,
+      "min": -0.7182635805733152,
+      "max": 7.965406650883,
+      "mean": 0.012901452915306578,
+      "std": 1.016214382344468,
+      "median": -0.7182635805733152
+    },
+    "complaint_resolution_days": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -0.9843645961511712,
+      "max": 9.048318004106736,
+      "mean": -0.006434524612135232,
+      "std": 0.9942742816383471,
+      "median": -0.3160074967894998
+    },
+    "satisfaction_score": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -3.743698303874672,
+      "max": 4.024352793285589,
+      "mean": 0.0014197401089710625,
+      "std": 0.9949614103060148,
+      "median": 0.0112115739915403
+    },
+    "escalation_count": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 5,
+      "min": -0.4468944990658225,
+      "max": 8.490995482250627,
+      "mean": 0.0037986032420594825,
+      "std": 1.0068460012934939,
+      "median": -0.4468944990658225
+    },
+    "service_quality_rating": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -3.913096531618896,
+      "max": 3.724510450992976,
+      "mean": 0.005080781544228793,
+      "std": 0.9918211554923314,
+      "median": 0.0053012472426152
+    },
+    "num_products": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 12,
+      "min": -1.573292585084815,
+      "max": 5.334589552768338,
+      "mean": 0.0015161455601261271,
+      "std": 1.001440123631397,
+      "median": -0.3173140145660598
+    },
+    "has_credit_card": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "has_mortgage": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "has_investment_account": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "has_insurance": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "product_diversity_score": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 32,
+      "min": -2.411406868142719,
+      "max": 4.824179637819726,
+      "mean": -0.001103796104736177,
+      "std": 1.0074259585048613,
+      "median": -0.0856826340833612
+    },
+    "tenure_months": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 121,
+      "min": -1.7192408737278224,
+      "max": 1.723051983677092,
+      "mean": 0.001773600415101076,
+      "std": 1.001791476258521,
+      "median": 0.0019055549746349
+    },
+    "balance_growth_rate": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -3.556076220449789,
+      "max": 4.154080897857164,
+      "mean": -0.00686337928776877,
+      "std": 0.9960501051747126,
+      "median": -0.00751393660511235
+    },
+    "is_new_customer": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "avg_account_balance": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -3.5836858924020527,
+      "max": 4.144593834591947,
+      "mean": 0.00018836886085307186,
+      "std": 1.001471410386077,
+      "median": 0.00314057797666035
+    },
+    "balance_trend": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -4.014946421424625,
+      "max": 3.870852135659541,
+      "mean": 0.0016554913430332995,
+      "std": 0.9931727845640143,
+      "median": 0.00014488978687210002
+    },
+    "balance_volatility": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -1.013484581489838,
+      "max": 8.984617750883412,
+      "mean": 0.007904513742454893,
+      "std": 1.0142478592927087,
+      "median": -0.2964908035881699
+    },
+    "salary_consistency": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -3.6919371619787062,
+      "max": 4.124702230781778,
+      "mean": 0.0017510213690513474,
+      "std": 0.9961699698231771,
+      "median": -0.00539306637114345
+    },
+    "withdrawal_ratio": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -1.78513101771506,
+      "max": 4.112793405792065,
+      "mean": -0.004854031139604907,
+      "std": 0.9994821626919762,
+      "median": -0.13777433539446304
+    },
+    "digital_adoption": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -3.781903369580835,
+      "max": 4.12947735270539,
+      "mean": -0.00019502496235364683,
+      "std": 0.9992842301631057,
+      "median": 0.0036680009805999
+    },
+    "family_size": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 11,
+      "min": -1.5923394399270396,
+      "max": 4.737232439396799,
+      "mean": 0.00207971647463502,
+      "std": 1.0057232552918811,
+      "median": -0.3264250640622721
+    },
+    "credit_score": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -3.717378074327268,
+      "max": 4.001343311666005,
+      "mean": -0.005152387028401007,
+      "std": 1.005482443493632,
+      "median": -0.00786124906895655
+    },
+    "credit_utilization": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -1.7884375662165146,
+      "max": 3.662434486135175,
+      "mean": -0.002194641058287002,
+      "std": 0.9996647157599364,
+      "median": -0.13434382654003058
+    },
+    "num_loan_defaults": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 3,
+      "min": -0.3247391864775585,
+      "max": 5.860769127380698,
+      "mean": -0.0040205804040078395,
+      "std": 0.9904376335586548,
+      "median": -0.3247391864775585
+    },
+    "debt_to_income": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -1.2036886498855508,
+      "max": 4.375949995144536,
+      "mean": -0.0012470381674900765,
+      "std": 0.9897873441994008,
+      "median": -0.25792904029453995
+    },
+    "credit_inquiry_count": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 8,
+      "min": -0.9983316228884234,
+      "max": 6.077937655504858,
+      "mean": 0.0012419574651873926,
+      "std": 1.007642326954251,
+      "median": 0.0125639883106166
+    },
+    "promotions_sent": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 15,
+      "min": -2.253377997659618,
+      "max": 4.486920260445384,
+      "mean": -0.0014443496267367636,
+      "std": 1.0005819410647496,
+      "median": -0.0066119116246172
+    },
+    "promotion_response_rate": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 10000,
+      "min": -1.648324317614961,
+      "max": 5.353825903823849,
+      "mean": -0.0005689633637858677,
+      "std": 1.0033980375263216,
+      "median": -0.1649861573346825
+    },
+    "reward_points": {
+      "type": "numerical",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 206,
+      "min": -3.2266281854729195,
+      "max": 4.053566896002087,
+      "mean": -0.005640806324519934,
+      "std": 0.9999584327983663,
+      "median": -0.025852761720977
+    },
+    "customer_since": {
+      "type": "numerical",
+      "dtype": "int64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 7000,
+      "min": 0.0,
+      "max": 6999.0,
+      "mean": 2449.65,
+      "std": 2330.3736592313185,
+      "median": 1999.5
+    },
+    "tenure_segment": {
+      "type": "numerical",
+      "dtype": "int64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 4,
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 0.9138,
+      "std": 0.5614277158352718,
+      "median": 1.0
+    },
+    "age_group": {
+      "type": "numerical",
+      "dtype": "int64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 5,
+      "min": 0.0,
+      "max": 4.0,
+      "mean": 1.9448,
+      "std": 1.2737798913160594,
+      "median": 2.0
+    },
+    "income_bracket": {
+      "type": "numerical",
+      "dtype": "int64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 4,
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 1.0534,
+      "std": 1.0319180808051331,
+      "median": 1.0
+    },
+    "account_type_Fixed Deposit": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "account_type_Current Account": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Vadodara": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "occupation_type_Service": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "occupation_type_Business": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Chennai": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Hyderabad": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "marital_status_Divorced": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Mumbai": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Nagpur": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Indore": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "occupation_type_Student": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "account_type_Student Account": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "account_type_Basic Savings": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Kolkata": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "account_type_Recurring Deposit": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "education_level_PhD": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "marital_status_Married": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Lucknow": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Kanpur": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Bhopal": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Visakhapatnam": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Surat": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Ahmedabad": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "occupation_type_Professional": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "account_type_Senior Citizen Account": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Thane": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "occupation_type_Retired": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "account_type_Salary Account": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "education_level_Master": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Bangalore": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Ludhiana": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "education_level_Bachelor": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "account_type_Savings Account": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "marital_status_Single": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "marital_status_Widowed": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Delhi": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Pune": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Jaipur": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "account_type_NRI Account": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "region_Patna": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    },
+    "education_level_High School": {
+      "type": "binary",
+      "dtype": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 2
+    }
+  },
+  "data_statistics": {
+    "total_samples": 10000,
+    "numerical_features": 41,
+    "categorical_features": 0,
+    "binary_features": 47
+  }
+}

@@ -1,0 +1,49 @@
+
+🎯 QUICK START GUIDE - POWER BI DASHBOARD
+=========================================
+
+YOUR DATA IS READY! Here's how to create the 5-page dashboard:
+
+STEP 1: IMPORT DATA (2 minutes)
+--------------------------------
+1. Open Power BI Desktop
+2. Click 'Get Data' → 'Text/CSV' 
+3. Navigate to: ../powerbi/data/
+4. Load ALL 5 CSV files
+
+STEP 2: CREATE 5 PAGES (15 minutes)
+-----------------------------------
+
+📊 PAGE 1: Executive Overview
+• 4 Card Visuals: Total Customers, High Risk Count, Expected Loss, Model AUC
+• Pie Chart: Risk segment distribution
+• Gauge: Average churn probability
+
+🔍 PAGE 2: Risk Analysis
+• Bar Chart: Customers by risk segment  
+• Scatter Plot: Probability vs Expected Loss
+• Table: High-risk customer details
+
+🎯 PAGE 3: Driver Analysis
+• Horizontal Bar: Top 10 features by SHAP importance
+• Treemap: Driver categories
+• Waterfall: Feature impact
+
+👤 PAGE 4: Individual Analysis  
+• Slicers: Risk segment, region, account type
+• Customer details table
+• Individual risk cards
+
+💰 PAGE 5: Business Impact
+• Cards: Total loss, high-risk loss, savings potential
+• Stacked Bar: Loss by segment
+• Matrix: Region × Segment × Loss
+
+STEP 3: FORMAT & SAVE (3 minutes)
+---------------------------------
+• Use colors: Red=High Risk, Yellow=Medium, Green=Low
+• Add descriptive titles
+• Save as: bank_churn_dashboard.pbix
+
+⏱️ TOTAL TIME: 20 minutes
+🎉 YOUR DASHBOARD WILL BE READY!

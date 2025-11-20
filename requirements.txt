@@ -1,0 +1,42 @@
+############################################################
+# 📊 BANK CUSTOMER CHURN PREDICTION SYSTEM - REQUIREMENTS
+# Optimized for compatibility and stability
+############################################################
+
+numpy>=1.21.0,<1.25.0
+pandas>=1.5.0,<2.1.0
+scikit-learn>=1.2.0,<1.4.0
+scipy>=1.9.0,<1.12.0
+
+# ML Models
+xgboost>=1.7.0,<1.8.0
+lightgbm>=4.0.0,<4.2.0
+
+# Explainable AI
+shap>=0.41.0,<0.43.0
+
+# Data Validation
+pydantic>=2.0.0,<3.0.0
+
+# Configuration
+pyyaml>=6.0,<7.0
+joblib>=1.2.0,<1.4.0
+python-dotenv>=1.0.0,<2.0.0
+
+# Visualization
+matplotlib>=3.5.0,<3.8.0
+seaborn>=0.12.0,<0.13.0
+plotly>=5.13.0,<6.0.0
+
+# Dashboard
+streamlit>=1.22.0,<1.29.0
+
+# Utilities
+tqdm>=4.64.0,<4.67.0
+
+# API
+fastapi>=0.95.0,<0.105.0
+uvicorn>=0.21.0,<0.25.0
+
+# Class Imbalance
+imbalanced-learn>=0.10.0,<0.11.0

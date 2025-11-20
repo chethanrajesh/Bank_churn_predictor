@@ -1,0 +1,58 @@
+QUICK BUILD GUIDE - 5-PAGE DASHBOARD
+=========================================
+
+FOLLOW THESE EXACT STEPS (10 MINUTES):
+
+STEP 1: IMPORT DATA (1 minute)
+--------------------------------
+1. In Power BI: Get Data -> Text/CSV
+2. Select ALL 5 files in ../powerbi/data/
+3. Click "Load" for each
+
+STEP 2: PAGE 1 - Executive Overview (2 minutes)
+-----------------------------------------------
+- Add 4 Card Visuals:
+  - Total Customers = COUNT(predictions_data[customer_id])
+  - High Risk = COUNTROWS(FILTER(predictions_data, predictions_data[risk_segment] = "High Risk"))
+  - Expected Loss = SUM(predictions_data[expected_loss])
+  - Model AUC = LOOKUPVALUE(model_metrics[metric_value], model_metrics[metric_name], "AUC Score")
+
+- Add Pie Chart:
+  - Legend: predictions_data[risk_segment]
+  - Values: Count of customer_id
+
+- Add Gauge:
+  - Value: AVERAGE(predictions_data[churn_probability])
+
+STEP 3: PAGE 2 - Risk Analysis (2 minutes)
+------------------------------------------
+- Bar Chart: predictions_data[risk_segment] x Count customer_id
+- Scatter Plot: predictions_data[churn_probability] x predictions_data[expected_loss]
+- Table: Show customer_id, churn_probability, risk_segment, region
+
+STEP 4: PAGE 3 - Driver Analysis (2 minutes)
+--------------------------------------------
+- Horizontal Bar Chart: shap_values_summary[feature_name] x shap_values_summary[shap_importance] (Top 10)
+- Treemap: driver_breakdown[driver_category] x driver_breakdown[normalized_importance]
+- Waterfall: Top 15 features from shap_values_summary
+
+STEP 5: PAGE 4 - Individual Analysis (2 minutes)
+------------------------------------------------
+- Add Slicers: risk_segment, region, account_type
+- Table: Customer details
+- Card: Individual risk scores
+
+STEP 6: PAGE 5 - Business Impact (1 minute)
+-------------------------------------------
+- Card Visuals: Total expected_loss, High Risk loss
+- Stacked Bar: expected_loss by risk_segment
+- Matrix: Region x risk_segment x expected_loss
+
+STEP 7: FORMATTING (2 minutes)
+-------------------------------
+- Colors: High Risk=Red, Medium Risk=Yellow, Low Risk=Green
+- Add titles to all visuals
+- Arrange layout professionally
+
+TOTAL TIME: 10-12 MINUTES
+YOUR DASHBOARD IS READY!

@@ -1,0 +1,10 @@
+SIMPLE DASHBOARD GUIDE:
+1. In Power BI: Get Data -> Text/CSV
+2. Navigate to the opened data folder
+3. Load all 5 CSV files
+4. Build 5 pages:
+   - Executive Overview (Cards + Pie + Gauge)
+   - Risk Analysis (Bar + Scatter + Table)
+   - Driver Analysis (Bar + Treemap + Waterfall)
+   - Individual Analysis (Slicers + Table)
+   - Business Impact (Cards + Stacked Bar + Matrix)

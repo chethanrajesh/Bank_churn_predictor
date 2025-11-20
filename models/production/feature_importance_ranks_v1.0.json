@@ -1,0 +1,1064 @@
+{
+  "random_forest": [
+    {
+      "feature": "days_since_last_login",
+      "importance": 0.1718021025412096
+    },
+    {
+      "feature": "overdraft_frequency",
+      "importance": 0.09949748296275689
+    },
+    {
+      "feature": "num_complaints",
+      "importance": 0.08013382036453262
+    },
+    {
+      "feature": "avg_monthly_fees",
+      "importance": 0.038806957610384926
+    },
+    {
+      "feature": "fee_to_balance_ratio",
+      "importance": 0.03601741968388451
+    },
+    {
+      "feature": "marital_status_Single",
+      "importance": 0.035797868437840594
+    },
+    {
+      "feature": "marital_status_Married",
+      "importance": 0.03337053502495217
+    },
+    {
+      "feature": "education_level_High School",
+      "importance": 0.030099911928940702
+    },
+    {
+      "feature": "has_investment_account",
+      "importance": 0.027184731319616275
+    },
+    {
+      "feature": "has_mortgage",
+      "importance": 0.026256940829176924
+    },
+    {
+      "feature": "education_level_Bachelor",
+      "importance": 0.02389085662790033
+    },
+    {
+      "feature": "has_insurance",
+      "importance": 0.022747988977150368
+    },
+    {
+      "feature": "has_credit_card",
+      "importance": 0.022695423265255258
+    },
+    {
+      "feature": "credit_inquiry_count",
+      "importance": 0.020784851835973915
+    },
+    {
+      "feature": "occupation_type_Business",
+      "importance": 0.01947891740915114
+    },
+    {
+      "feature": "occupation_type_Service",
+      "importance": 0.01761482126062475
+    },
+    {
+      "feature": "occupation_type_Professional",
+      "importance": 0.016595321531579187
+    },
+    {
+      "feature": "education_level_Master",
+      "importance": 0.01406185826152923
+    },
+    {
+      "feature": "occupation_type_Retired",
+      "importance": 0.013933078840947188
+    },
+    {
+      "feature": "income_bracket",
+      "importance": 0.01329970282389386
+    },
+    {
+      "feature": "occupation_type_Student",
+      "importance": 0.012658650414969792
+    },
+    {
+      "feature": "escalation_count",
+      "importance": 0.011041075790683601
+    },
+    {
+      "feature": "marital_status_Divorced",
+      "importance": 0.009452830305928623
+    },
+    {
+      "feature": "age_group",
+      "importance": 0.008910091260844325
+    },
+    {
+      "feature": "balance_volatility",
+      "importance": 0.008212055637277397
+    },
+    {
+      "feature": "customer_since",
+      "importance": 0.00683331570239559
+    },
+    {
+      "feature": "account_type_Savings Account",
+      "importance": 0.006708159829030427
+    },
+    {
+      "feature": "family_size",
+      "importance": 0.006045910100202857
+    },
+    {
+      "feature": "tenure_months",
+      "importance": 0.0058738166358997665
+    },
+    {
+      "feature": "education_level_PhD",
+      "importance": 0.005353134988938182
+    },
+    {
+      "feature": "debt_to_income",
+      "importance": 0.0052190300557477766
+    },
+    {
+      "feature": "complaint_resolution_days",
+      "importance": 0.0051975011698703584
+    },
+    {
+      "feature": "app_usage_minutes",
+      "importance": 0.005152650808788431
+    },
+    {
+      "feature": "account_type_NRI Account",
+      "importance": 0.004985391461245834
+    },
+    {
+      "feature": "activity_score",
+      "importance": 0.004950424849044668
+    },
+    {
+      "feature": "satisfaction_score",
+      "importance": 0.004873397768560623
+    },
+    {
+      "feature": "num_products",
+      "importance": 0.0046382309432382056
+    },
+    {
+      "feature": "customer_service_calls",
+      "importance": 0.00462090349750143
+    },
+    {
+      "feature": "product_diversity_score",
+      "importance": 0.004546971193548046
+    },
+    {
+      "feature": "account_type_Current Account",
+      "importance": 0.00446869054307428
+    },
+    {
+      "feature": "age",
+      "importance": 0.0043924525799527
+    },
+    {
+      "feature": "salary_consistency",
+      "importance": 0.004375223775595441
+    },
+    {
+      "feature": "income",
+      "importance": 0.00436572737717823
+    },
+    {
+      "feature": "penalty_charges",
+      "importance": 0.004219492496549388
+    },
+    {
+      "feature": "avg_account_balance",
+      "importance": 0.0039573985574679225
+    },
+    {
+      "feature": "balance_trend",
+      "importance": 0.0038890838469311235
+    },
+    {
+      "feature": "service_quality_rating",
+      "importance": 0.0038756574560245855
+    },
+    {
+      "feature": "account_type_Student Account",
+      "importance": 0.00383333976735919
+    },
+    {
+      "feature": "credit_score",
+      "importance": 0.003797929205763707
+    },
+    {
+      "feature": "login_frequency",
+      "importance": 0.0037833499472838283
+    },
+    {
+      "feature": "account_type_Recurring Deposit",
+      "importance": 0.003757816071284381
+    },
+    {
+      "feature": "reward_points",
+      "importance": 0.0037482734080137815
+    },
+    {
+      "feature": "overdraft_amount",
+      "importance": 0.0036772814644757553
+    },
+    {
+      "feature": "promotion_response_rate",
+      "importance": 0.003661761505540872
+    },
+    {
+      "feature": "total_transactions",
+      "importance": 0.003616510378397925
+    },
+    {
+      "feature": "credit_utilization",
+      "importance": 0.0036099119033662637
+    },
+    {
+      "feature": "promotions_sent",
+      "importance": 0.003530365108766922
+    },
+    {
+      "feature": "balance_growth_rate",
+      "importance": 0.0034699396949167786
+    },
+    {
+      "feature": "withdrawal_ratio",
+      "importance": 0.0034665894971422305
+    },
+    {
+      "feature": "digital_adoption",
+      "importance": 0.003306901158685277
+    },
+    {
+      "feature": "account_type_Fixed Deposit",
+      "importance": 0.0024993432154175148
+    },
+    {
+      "feature": "num_loan_defaults",
+      "importance": 0.0024909711241206263
+    },
+    {
+      "feature": "account_type_Senior Citizen Account",
+      "importance": 0.0023418100118112366
+    },
+    {
+      "feature": "account_type_Basic Savings",
+      "importance": 0.002178136566420187
+    },
+    {
+      "feature": "marital_status_Widowed",
+      "importance": 0.0019329215499863132
+    },
+    {
+      "feature": "account_type_Salary Account",
+      "importance": 0.0019220982456970997
+    },
+    {
+      "feature": "region_Indore",
+      "importance": 0.001390042714249933
+    },
+    {
+      "feature": "region_Bangalore",
+      "importance": 0.0012026397115137677
+    },
+    {
+      "feature": "region_Mumbai",
+      "importance": 0.0011317649745457314
+    },
+    {
+      "feature": "region_Ahmedabad",
+      "importance": 0.0011075216598836805
+    },
+    {
+      "feature": "tenure_segment",
+      "importance": 0.000998278242865359
+    },
+    {
+      "feature": "region_Pune",
+      "importance": 0.0009730347915296763
+    },
+    {
+      "feature": "region_Jaipur",
+      "importance": 0.0009711048444341619
+    },
+    {
+      "feature": "region_Hyderabad",
+      "importance": 0.0009018616667238832
+    },
+    {
+      "feature": "region_Vadodara",
+      "importance": 0.0008044834978230801
+    },
+    {
+      "feature": "region_Lucknow",
+      "importance": 0.0007446668187091996
+    },
+    {
+      "feature": "region_Ludhiana",
+      "importance": 0.0007446451851773839
+    },
+    {
+      "feature": "region_Delhi",
+      "importance": 0.0006569436914226792
+    },
+    {
+      "feature": "region_Chennai",
+      "importance": 0.0006016670855284285
+    },
+    {
+      "feature": "region_Kolkata",
+      "importance": 0.0005949686640182931
+    },
+    {
+      "feature": "region_Visakhapatnam",
+      "importance": 0.0005667758910262626
+    },
+    {
+      "feature": "region_Surat",
+      "importance": 0.0005599409700811323
+    },
+    {
+      "feature": "is_new_customer",
+      "importance": 0.0005325225071602664
+    },
+    {
+      "feature": "region_Nagpur",
+      "importance": 0.0004968506823085649
+    },
+    {
+      "feature": "region_Patna",
+      "importance": 0.00044237492529148
+    },
+    {
+      "feature": "region_Kanpur",
+      "importance": 0.0004368699372001647
+    },
+    {
+      "feature": "region_Bhopal",
+      "importance": 0.0003854884964628059
+    },
+    {
+      "feature": "region_Thane",
+      "importance": 0.00024244263380422115
+    }
+  ],
+  "xgboost": [
+    {
+      "feature": "overdraft_frequency",
+      "importance": 0.09274784475564957
+    },
+    {
+      "feature": "num_complaints",
+      "importance": 0.05945168808102608
+    },
+    {
+      "feature": "marital_status_Single",
+      "importance": 0.05372508615255356
+    },
+    {
+      "feature": "days_since_last_login",
+      "importance": 0.04949650168418884
+    },
+    {
+      "feature": "education_level_Bachelor",
+      "importance": 0.04340392351150513
+    },
+    {
+      "feature": "has_mortgage",
+      "importance": 0.040844473987817764
+    },
+    {
+      "feature": "has_credit_card",
+      "importance": 0.036596424877643585
+    },
+    {
+      "feature": "has_investment_account",
+      "importance": 0.03276975080370903
+    },
+    {
+      "feature": "marital_status_Married",
+      "importance": 0.03038705326616764
+    },
+    {
+      "feature": "credit_inquiry_count",
+      "importance": 0.023385006934404373
+    },
+    {
+      "feature": "has_insurance",
+      "importance": 0.02196410670876503
+    },
+    {
+      "feature": "occupation_type_Student",
+      "importance": 0.019361110404133797
+    },
+    {
+      "feature": "education_level_PhD",
+      "importance": 0.017046600580215454
+    },
+    {
+      "feature": "occupation_type_Service",
+      "importance": 0.01680198684334755
+    },
+    {
+      "feature": "occupation_type_Professional",
+      "importance": 0.015984687954187393
+    },
+    {
+      "feature": "occupation_type_Retired",
+      "importance": 0.014944026246666908
+    },
+    {
+      "feature": "region_Mumbai",
+      "importance": 0.014284959994256496
+    },
+    {
+      "feature": "occupation_type_Business",
+      "importance": 0.013765312731266022
+    },
+    {
+      "feature": "escalation_count",
+      "importance": 0.013422076590359211
+    },
+    {
+      "feature": "education_level_High School",
+      "importance": 0.013353749178349972
+    },
+    {
+      "feature": "account_type_Senior Citizen Account",
+      "importance": 0.012850767932832241
+    },
+    {
+      "feature": "avg_monthly_fees",
+      "importance": 0.01255838107317686
+    },
+    {
+      "feature": "fee_to_balance_ratio",
+      "importance": 0.01131112314760685
+    },
+    {
+      "feature": "income_bracket",
+      "importance": 0.010780380107462406
+    },
+    {
+      "feature": "account_type_NRI Account",
+      "importance": 0.010156991891562939
+    },
+    {
+      "feature": "account_type_Student Account",
+      "importance": 0.009407022036612034
+    },
+    {
+      "feature": "region_Chennai",
+      "importance": 0.009362553246319294
+    },
+    {
+      "feature": "is_new_customer",
+      "importance": 0.008971965871751308
+    },
+    {
+      "feature": "region_Pune",
+      "importance": 0.008486563339829445
+    },
+    {
+      "feature": "marital_status_Divorced",
+      "importance": 0.008366757072508335
+    },
+    {
+      "feature": "age_group",
+      "importance": 0.008174076676368713
+    },
+    {
+      "feature": "account_type_Savings Account",
+      "importance": 0.00795008335262537
+    },
+    {
+      "feature": "region_Nagpur",
+      "importance": 0.007659118622541428
+    },
+    {
+      "feature": "region_Bangalore",
+      "importance": 0.007649903651326895
+    },
+    {
+      "feature": "account_type_Fixed Deposit",
+      "importance": 0.007592689711600542
+    },
+    {
+      "feature": "education_level_Master",
+      "importance": 0.00726891215890646
+    },
+    {
+      "feature": "region_Indore",
+      "importance": 0.007093009073287249
+    },
+    {
+      "feature": "region_Ahmedabad",
+      "importance": 0.007045926991850138
+    },
+    {
+      "feature": "account_type_Current Account",
+      "importance": 0.006795118562877178
+    },
+    {
+      "feature": "account_type_Salary Account",
+      "importance": 0.006746803876012564
+    },
+    {
+      "feature": "region_Thane",
+      "importance": 0.006451809778809547
+    },
+    {
+      "feature": "account_type_Recurring Deposit",
+      "importance": 0.006373570766299963
+    },
+    {
+      "feature": "marital_status_Widowed",
+      "importance": 0.006159424781799316
+    },
+    {
+      "feature": "num_loan_defaults",
+      "importance": 0.0056634568609297276
+    },
+    {
+      "feature": "account_type_Basic Savings",
+      "importance": 0.0055614616721868515
+    },
+    {
+      "feature": "region_Surat",
+      "importance": 0.005552716087549925
+    },
+    {
+      "feature": "region_Delhi",
+      "importance": 0.005542282946407795
+    },
+    {
+      "feature": "customer_service_calls",
+      "importance": 0.005400896538048983
+    },
+    {
+      "feature": "balance_volatility",
+      "importance": 0.005155883263796568
+    },
+    {
+      "feature": "region_Lucknow",
+      "importance": 0.00508915027603507
+    },
+    {
+      "feature": "num_products",
+      "importance": 0.004980883561074734
+    },
+    {
+      "feature": "customer_since",
+      "importance": 0.0047798133455216885
+    },
+    {
+      "feature": "app_usage_minutes",
+      "importance": 0.004656084813177586
+    },
+    {
+      "feature": "activity_score",
+      "importance": 0.0046529946848750114
+    },
+    {
+      "feature": "tenure_segment",
+      "importance": 0.0046008434146642685
+    },
+    {
+      "feature": "debt_to_income",
+      "importance": 0.004421599674969912
+    },
+    {
+      "feature": "family_size",
+      "importance": 0.004406361375004053
+    },
+    {
+      "feature": "region_Patna",
+      "importance": 0.00439397431910038
+    },
+    {
+      "feature": "tenure_months",
+      "importance": 0.0043142857030034065
+    },
+    {
+      "feature": "region_Jaipur",
+      "importance": 0.0042196763679385185
+    },
+    {
+      "feature": "satisfaction_score",
+      "importance": 0.004202420357614756
+    },
+    {
+      "feature": "region_Bhopal",
+      "importance": 0.004201130475848913
+    },
+    {
+      "feature": "region_Kanpur",
+      "importance": 0.004133888985961676
+    },
+    {
+      "feature": "region_Hyderabad",
+      "importance": 0.00407874071970582
+    },
+    {
+      "feature": "region_Vadodara",
+      "importance": 0.0039578028954565525
+    },
+    {
+      "feature": "complaint_resolution_days",
+      "importance": 0.003886043792590499
+    },
+    {
+      "feature": "salary_consistency",
+      "importance": 0.0037958724424242973
+    },
+    {
+      "feature": "balance_growth_rate",
+      "importance": 0.0037419223226606846
+    },
+    {
+      "feature": "promotions_sent",
+      "importance": 0.003725433023646474
+    },
+    {
+      "feature": "total_transactions",
+      "importance": 0.0036809586454182863
+    },
+    {
+      "feature": "avg_account_balance",
+      "importance": 0.0036391522735357285
+    },
+    {
+      "feature": "product_diversity_score",
+      "importance": 0.0035484246909618378
+    },
+    {
+      "feature": "age",
+      "importance": 0.0035459527280181646
+    },
+    {
+      "feature": "reward_points",
+      "importance": 0.003475053468719125
+    },
+    {
+      "feature": "login_frequency",
+      "importance": 0.0034717670641839504
+    },
+    {
+      "feature": "credit_score",
+      "importance": 0.0034687346778810024
+    },
+    {
+      "feature": "balance_trend",
+      "importance": 0.0033915776293724775
+    },
+    {
+      "feature": "region_Visakhapatnam",
+      "importance": 0.0033650801051408052
+    },
+    {
+      "feature": "digital_adoption",
+      "importance": 0.0033355229534208775
+    },
+    {
+      "feature": "income",
+      "importance": 0.003324158489704132
+    },
+    {
+      "feature": "service_quality_rating",
+      "importance": 0.003278301563113928
+    },
+    {
+      "feature": "penalty_charges",
+      "importance": 0.0032407655380666256
+    },
+    {
+      "feature": "credit_utilization",
+      "importance": 0.003161899745464325
+    },
+    {
+      "feature": "withdrawal_ratio",
+      "importance": 0.003130844561383128
+    },
+    {
+      "feature": "overdraft_amount",
+      "importance": 0.0030669427942484617
+    },
+    {
+      "feature": "region_Kolkata",
+      "importance": 0.002995144808664918
+    },
+    {
+      "feature": "promotion_response_rate",
+      "importance": 0.0029213414527475834
+    },
+    {
+      "feature": "region_Ludhiana",
+      "importance": 0.001893424428999424
+    }
+  ],
+  "lightgbm": [
+    {
+      "feature": "days_since_last_login",
+      "importance": 345.0
+    },
+    {
+      "feature": "overdraft_frequency",
+      "importance": 283.0
+    },
+    {
+      "feature": "avg_monthly_fees",
+      "importance": 241.0
+    },
+    {
+      "feature": "num_complaints",
+      "importance": 189.0
+    },
+    {
+      "feature": "salary_consistency",
+      "importance": 174.0
+    },
+    {
+      "feature": "satisfaction_score",
+      "importance": 173.0
+    },
+    {
+      "feature": "debt_to_income",
+      "importance": 168.0
+    },
+    {
+      "feature": "avg_account_balance",
+      "importance": 165.0
+    },
+    {
+      "feature": "balance_trend",
+      "importance": 160.0
+    },
+    {
+      "feature": "service_quality_rating",
+      "importance": 154.0
+    },
+    {
+      "feature": "balance_growth_rate",
+      "importance": 153.0
+    },
+    {
+      "feature": "complaint_resolution_days",
+      "importance": 148.0
+    },
+    {
+      "feature": "income",
+      "importance": 148.0
+    },
+    {
+      "feature": "fee_to_balance_ratio",
+      "importance": 143.0
+    },
+    {
+      "feature": "penalty_charges",
+      "importance": 140.0
+    },
+    {
+      "feature": "app_usage_minutes",
+      "importance": 140.0
+    },
+    {
+      "feature": "credit_score",
+      "importance": 140.0
+    },
+    {
+      "feature": "overdraft_amount",
+      "importance": 136.0
+    },
+    {
+      "feature": "login_frequency",
+      "importance": 136.0
+    },
+    {
+      "feature": "withdrawal_ratio",
+      "importance": 135.0
+    },
+    {
+      "feature": "credit_utilization",
+      "importance": 135.0
+    },
+    {
+      "feature": "reward_points",
+      "importance": 132.0
+    },
+    {
+      "feature": "balance_volatility",
+      "importance": 130.0
+    },
+    {
+      "feature": "activity_score",
+      "importance": 128.0
+    },
+    {
+      "feature": "promotion_response_rate",
+      "importance": 128.0
+    },
+    {
+      "feature": "digital_adoption",
+      "importance": 121.0
+    },
+    {
+      "feature": "age",
+      "importance": 107.0
+    },
+    {
+      "feature": "customer_since",
+      "importance": 102.0
+    },
+    {
+      "feature": "product_diversity_score",
+      "importance": 85.0
+    },
+    {
+      "feature": "has_credit_card",
+      "importance": 81.0
+    },
+    {
+      "feature": "total_transactions",
+      "importance": 80.0
+    },
+    {
+      "feature": "tenure_months",
+      "importance": 79.0
+    },
+    {
+      "feature": "promotions_sent",
+      "importance": 77.0
+    },
+    {
+      "feature": "marital_status_Single",
+      "importance": 58.0
+    },
+    {
+      "feature": "family_size",
+      "importance": 56.0
+    },
+    {
+      "feature": "credit_inquiry_count",
+      "importance": 56.0
+    },
+    {
+      "feature": "num_products",
+      "importance": 54.0
+    },
+    {
+      "feature": "customer_service_calls",
+      "importance": 52.0
+    },
+    {
+      "feature": "has_insurance",
+      "importance": 50.0
+    },
+    {
+      "feature": "age_group",
+      "importance": 47.0
+    },
+    {
+      "feature": "has_investment_account",
+      "importance": 46.0
+    },
+    {
+      "feature": "occupation_type_Service",
+      "importance": 46.0
+    },
+    {
+      "feature": "education_level_Bachelor",
+      "importance": 36.0
+    },
+    {
+      "feature": "occupation_type_Student",
+      "importance": 32.0
+    },
+    {
+      "feature": "education_level_High School",
+      "importance": 26.0
+    },
+    {
+      "feature": "account_type_Current Account",
+      "importance": 26.0
+    },
+    {
+      "feature": "occupation_type_Retired",
+      "importance": 25.0
+    },
+    {
+      "feature": "has_mortgage",
+      "importance": 24.0
+    },
+    {
+      "feature": "account_type_Recurring Deposit",
+      "importance": 22.0
+    },
+    {
+      "feature": "education_level_Master",
+      "importance": 22.0
+    },
+    {
+      "feature": "marital_status_Married",
+      "importance": 22.0
+    },
+    {
+      "feature": "income_bracket",
+      "importance": 20.0
+    },
+    {
+      "feature": "account_type_NRI Account",
+      "importance": 18.0
+    },
+    {
+      "feature": "occupation_type_Business",
+      "importance": 18.0
+    },
+    {
+      "feature": "occupation_type_Professional",
+      "importance": 17.0
+    },
+    {
+      "feature": "num_loan_defaults",
+      "importance": 16.0
+    },
+    {
+      "feature": "region_Indore",
+      "importance": 16.0
+    },
+    {
+      "feature": "account_type_Fixed Deposit",
+      "importance": 16.0
+    },
+    {
+      "feature": "region_Mumbai",
+      "importance": 15.0
+    },
+    {
+      "feature": "region_Bangalore",
+      "importance": 14.0
+    },
+    {
+      "feature": "account_type_Salary Account",
+      "importance": 14.0
+    },
+    {
+      "feature": "account_type_Basic Savings",
+      "importance": 14.0
+    },
+    {
+      "feature": "account_type_Student Account",
+      "importance": 14.0
+    },
+    {
+      "feature": "account_type_Savings Account",
+      "importance": 14.0
+    },
+    {
+      "feature": "education_level_PhD",
+      "importance": 12.0
+    },
+    {
+      "feature": "marital_status_Divorced",
+      "importance": 11.0
+    },
+    {
+      "feature": "escalation_count",
+      "importance": 8.0
+    },
+    {
+      "feature": "region_Thane",
+      "importance": 8.0
+    },
+    {
+      "feature": "region_Bhopal",
+      "importance": 8.0
+    },
+    {
+      "feature": "region_Ahmedabad",
+      "importance": 8.0
+    },
+    {
+      "feature": "region_Pune",
+      "importance": 8.0
+    },
+    {
+      "feature": "marital_status_Widowed",
+      "importance": 8.0
+    },
+    {
+      "feature": "region_Nagpur",
+      "importance": 7.0
+    },
+    {
+      "feature": "is_new_customer",
+      "importance": 7.0
+    },
+    {
+      "feature": "region_Lucknow",
+      "importance": 7.0
+    },
+    {
+      "feature": "account_type_Senior Citizen Account",
+      "importance": 7.0
+    },
+    {
+      "feature": "region_Kanpur",
+      "importance": 6.0
+    },
+    {
+      "feature": "region_Hyderabad",
+      "importance": 6.0
+    },
+    {
+      "feature": "tenure_segment",
+      "importance": 5.0
+    },
+    {
+      "feature": "region_Patna",
+      "importance": 5.0
+    },
+    {
+      "feature": "region_Kolkata",
+      "importance": 5.0
+    },
+    {
+      "feature": "region_Visakhapatnam",
+      "importance": 5.0
+    },
+    {
+      "feature": "region_Delhi",
+      "importance": 4.0
+    },
+    {
+      "feature": "region_Chennai",
+      "importance": 3.0
+    },
+    {
+      "feature": "region_Vadodara",
+      "importance": 3.0
+    },
+    {
+      "feature": "region_Surat",
+      "importance": 3.0
+    },
+    {
+      "feature": "region_Jaipur",
+      "importance": 1.0
+    },
+    {
+      "feature": "region_Ludhiana",
+      "importance": 0.0
+    }
+  ]
+}

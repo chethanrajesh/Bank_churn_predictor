@@ -1,0 +1,87 @@
+############################################################
+# 🧑‍💻 DEVELOPMENT REQUIREMENTS
+# BANK CUSTOMER CHURN PREDICTION SYSTEM (DEV ENV)
+# Includes: Testing, Code Quality, Documentation, Security
+############################################################
+
+########################
+# 🧪 TESTING FRAMEWORK
+########################
+pytest==7.4.2
+pytest-cov==4.1.0              # Coverage reports
+pytest-mock==3.11.1            # Mocking utilities
+pytest-xdist==3.3.1            # Parallel test execution
+pytest-asyncio==0.21.1         # Async test support
+pytest-html==4.0.2             # HTML test reports
+
+########################
+# 🧹 CODE QUALITY & FORMATTING
+########################
+black==23.9.1                  # Code formatter
+flake8==6.1.0                  # Linting
+isort==5.12.0                  # import sorting
+mypy==1.5.1                    # Static type checking
+pre-commit==3.4.0              # Git hook management
+autoflake==2.2.1               # Remove unused imports
+pylint==3.0.2                  # Additional linting
+
+########################
+# 📘 DOCUMENTATION
+########################
+sphinx==7.2.6
+sphinx-rtd-theme==1.3.0        # ReadTheDocs theme
+sphinx-autodoc-typehints==1.25.2  # Better type hint support
+mkdocs==1.5.3                  # Fixed: Remove upper bound for compatibility
+mkdocs-material==9.4.1         # Material design for MkDocs
+
+########################
+# 🔐 SECURITY & AUDITING
+########################
+safety==2.3.5                  # Vulnerability scanning
+bandit==1.7.5                  # Security linter
+semgrep==1.42.0                # Advanced security scanning
+
+########################
+# 📓 JUPYTER ENVIRONMENT
+########################
+jupyter==1.0.0
+ipykernel==6.25.2
+ipywidgets==8.1.1
+jupyterlab==4.0.7              # Modern notebook interface
+jupyter-contrib-nbextensions==0.7.0  # Notebook extensions
+jupyterlab-code-formatter==3.0.0     # Format code in Jupyter
+
+########################
+# 🌐 API TESTING & HTTP
+########################
+requests==2.31.0
+httpx==0.25.2                  # Async HTTP client
+pytest-recording==0.13.2       # Record and replay HTTP tests
+
+########################
+# 🗄️ DATABASE & STORAGE (OPTIONAL)
+########################
+sqlalchemy==2.0.23             # ORM for database connections
+psycopg2-binary==2.9.7         # PostgreSQL driver
+fakeredis==2.18.0              # Redis mocking for tests
+
+########################
+# 📈 MONITORING & METRICS
+########################
+prometheus-client==0.17.1      # Metrics export for monitoring
+pytest-benchmark==4.0.0        # Performance benchmarking
+
+########################
+# 🔧 DEVELOPMENT UTILITIES
+########################
+invoke==2.1.0                  # Task execution (alternative to Make)
+cookiecutter==2.3.0            # Project templates
+pip-tools==7.4.0               # Dependency management
+pip-audit==2.6.1               # Audit dependencies for vulnerabilities
+
+########################
+# 🎯 ML SPECIFIC TESTING
+########################
+deepchecks==0.17.4             # ML model validation
+evidently==0.4.0               # ML monitoring
+# great-expectations==0.17.13  # REMOVED: Too heavy for this project

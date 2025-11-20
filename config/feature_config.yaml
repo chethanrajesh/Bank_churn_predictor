@@ -1,0 +1,450 @@
+# Feature Configuration for Bank Churn Prediction
+# Defines 52 features across 10 churn drivers
+
+version: "1.0.0"
+description: "Feature definitions for 52 customer features across 10 churn drivers"
+
+feature_groups:
+  base_demographics:
+    description: "Core customer identification and demographic information"
+    features:
+      customer_id:
+        type: "identifier"
+        description: "Unique customer identifier"
+        preprocessing: "none"
+        required: true
+        
+      age:
+        type: "numerical"
+        description: "Customer age in years"
+        range: [18, 80]
+        preprocessing: "standard_scaling"
+        business_impact: "medium"
+        
+      income:
+        type: "numerical" 
+        description: "Annual income in INR"
+        range: [10000, 200000]
+        preprocessing: "log_scaling"
+        business_impact: "high"
+        
+      region:
+        type: "categorical"
+        description: "Indian city where customer is located"
+        categories: [
+          "Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai",
+          "Kolkata", "Pune", "Ahmedabad", "Jaipur", "Lucknow",
+          "Surat", "Kanpur", "Nagpur", "Patna", "Indore",
+          "Thane", "Bhopal", "Visakhapatnam", "Vadodara", "Ludhiana"
+        ]
+        preprocessing: "one_hot_encoding"
+        business_impact: "low"
+        
+      occupation_type:
+        type: "categorical"
+        description: "Type of occupation"
+        categories: ["Professional", "Service", "Business", "Retired", "Student"]
+        preprocessing: "one_hot_encoding"
+        business_impact: "medium"
+        
+      account_type:
+        type: "categorical"
+        description: "Type of bank account"
+        categories: [
+          "Savings Account", "Salary Account", "Current Account",
+          "Fixed Deposit", "Recurring Deposit", "NRI Account",
+          "Senior Citizen Account", "Student Account", "Basic Savings"
+        ]
+        preprocessing: "one_hot_encoding"
+        business_impact: "medium"
+
+  churn_drivers:
+    low_engagement:
+      description: "Driver 1: Low customer engagement and activity"
+      weight: 0.25
+      features:
+        total_transactions:
+          type: "numerical"
+          description: "Total monthly transactions"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+          
+        login_frequency:
+          type: "numerical"
+          description: "Frequency of app/branch logins"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+          
+        app_usage_minutes:
+          type: "numerical"
+          description: "Mobile app usage time in minutes"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+          
+        days_since_last_login:
+          type: "numerical"
+          description: "Days since last login activity"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+          
+        customer_service_calls:
+          type: "numerical"
+          description: "Number of customer service calls"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+          
+        activity_score:
+          type: "numerical"
+          description: "Composite engagement score"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+
+    high_fees:
+      description: "Driver 2: High fees and penalty charges"
+      weight: 0.20
+      features:
+        avg_monthly_fees:
+          type: "numerical"
+          description: "Average monthly service fees"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+          
+        overdraft_frequency:
+          type: "numerical"
+          description: "Frequency of overdraft occurrences"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+          
+        penalty_charges:
+          type: "numerical"
+          description: "Total penalty charges incurred"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+          
+        fee_to_balance_ratio:
+          type: "numerical"
+          description: "Ratio of fees to account balance"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+          
+        overdraft_amount:
+          type: "numerical"
+          description: "Average overdraft amount"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+
+    poor_service:
+      description: "Driver 3: Poor service quality and complaints"
+      weight: 0.15
+      features:
+        num_complaints:
+          type: "numerical"
+          description: "Number of customer complaints"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+          
+        complaint_resolution_days:
+          type: "numerical"
+          description: "Average days to resolve complaints"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+          
+        satisfaction_score:
+          type: "numerical"
+          description: "Customer satisfaction score (1-10)"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+          
+        escalation_count:
+          type: "numerical"
+          description: "Number of escalated complaints"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+          
+        service_quality_rating:
+          type: "numerical"
+          description: "Service quality rating (1-10)"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+
+    low_product_holding:
+      description: "Driver 4: Low product diversification"
+      weight: 0.10
+      features:
+        num_products:
+          type: "numerical"
+          description: "Number of banking products held"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+          
+        has_credit_card:
+          type: "binary"
+          description: "Indicates credit card ownership"
+          preprocessing: "none"
+          churn_impact: "negative"
+          
+        has_mortgage:
+          type: "binary"
+          description: "Indicates mortgage loan"
+          preprocessing: "none"
+          churn_impact: "negative"
+          
+        has_investment_account:
+          type: "binary"
+          description: "Indicates investment account"
+          preprocessing: "none"
+          churn_impact: "negative"
+          
+        has_insurance:
+          type: "binary"
+          description: "Indicates insurance products"
+          preprocessing: "none"
+          churn_impact: "negative"
+          
+        product_diversity_score:
+          type: "numerical"
+          description: "Composite product diversity score"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+
+    short_tenure:
+      description: "Driver 5: Short customer tenure"
+      weight: 0.10
+      features:
+        tenure_months:
+          type: "numerical"
+          description: "Months as bank customer"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+          
+        balance_growth_rate:
+          type: "numerical"
+          description: "Monthly balance growth rate"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+          
+        is_new_customer:
+          type: "binary"
+          description: "Flag for new customers (<6 months)"
+          preprocessing: "none"
+          churn_impact: "positive"
+          
+        tenure_segment:
+          type: "categorical"
+          description: "Customer tenure segment"
+          categories: ["New", "Established", "Loyal", "Veteran"]
+          preprocessing: "ordinal_encoding"
+          churn_impact: "negative"
+          
+        age_group:
+          type: "categorical"
+          description: "Customer age group"
+          categories: ["Young", "Adult", "Middle", "Senior", "Elderly"]
+          preprocessing: "ordinal_encoding"
+          churn_impact: "variable"
+
+    balance_fluctuations:
+      description: "Driver 6: Account balance fluctuations"
+      weight: 0.05
+      features:
+        avg_account_balance:
+          type: "numerical"
+          description: "Average account balance"
+          preprocessing: "log_scaling"
+          churn_impact: "negative"
+          
+        balance_trend:
+          type: "numerical"
+          description: "Balance trend over time"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+          
+        balance_volatility:
+          type: "numerical"
+          description: "Balance volatility measure"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+          
+        salary_consistency:
+          type: "numerical"
+          description: "Salary deposit consistency"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+          
+        withdrawal_ratio:
+          type: "numerical"
+          description: "Ratio of withdrawals to deposits"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+
+    demographics:
+      description: "Driver 7: Demographic characteristics"
+      weight: 0.05
+      features:
+        income_bracket:
+          type: "categorical"
+          description: "Income category"
+          categories: ["Low", "Medium", "High", "Very High", "Wealthy"]
+          preprocessing: "ordinal_encoding"
+          churn_impact: "negative"
+          
+        digital_adoption:
+          type: "numerical"
+          description: "Digital banking adoption score"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+          
+        family_size:
+          type: "numerical"
+          description: "Number of family members"
+          preprocessing: "standard_scaling"
+          churn_impact: "variable"
+          
+        education_level:
+          type: "categorical"
+          description: "Education level"
+          categories: ["High School", "Bachelor", "Master", "PhD"]
+          preprocessing: "ordinal_encoding"
+          churn_impact: "variable"
+          
+        marital_status:
+          type: "categorical"
+          description: "Marital status"
+          categories: ["Single", "Married", "Divorced", "Widowed"]
+          preprocessing: "one_hot_encoding"
+          churn_impact: "variable"
+
+    credit_issues:
+      description: "Driver 8: Credit and loan problems"
+      weight: 0.05
+      features:
+        credit_score:
+          type: "numerical"
+          description: "Credit score (300-850)"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+          
+        credit_utilization:
+          type: "numerical"
+          description: "Credit utilization ratio"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+          
+        num_loan_defaults:
+          type: "numerical"
+          description: "Number of loan defaults"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+          
+        debt_to_income:
+          type: "numerical"
+          description: "Debt to income ratio"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+          
+        credit_inquiry_count:
+          type: "numerical"
+          description: "Number of credit inquiries"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+
+    personalization_offers:
+      description: "Driver 9: Personalization and offer engagement"
+      weight: 0.03
+      features:
+        promotions_sent:
+          type: "numerical"
+          description: "Number of promotions sent"
+          preprocessing: "standard_scaling"
+          churn_impact: "variable"
+          
+        promotion_response_rate:
+          type: "numerical"
+          description: "Response rate to promotions"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+          
+        reward_points:
+          type: "numerical"
+          description: "Accumulated reward points"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+          
+        personalized_offers_count:
+          type: "numerical"
+          description: "Number of personalized offers"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+          
+        offer_relevance_score:
+          type: "numerical"
+          description: "Relevance score of offers"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+
+    contract_events:
+      description: "Driver 10: Account contract events"
+      weight: 0.02
+      features:
+        account_age_months:
+          type: "numerical"
+          description: "Account age in months"
+          preprocessing: "standard_scaling"
+          churn_impact: "negative"
+          
+        maturity_proximity_days:
+          type: "numerical"
+          description: "Days until account maturity"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+          
+        renewal_flag:
+          type: "binary"
+          description: "Account renewal pending flag"
+          preprocessing: "none"
+          churn_impact: "positive"
+          
+        account_closure_requests:
+          type: "numerical"
+          description: "Number of closure requests"
+          preprocessing: "standard_scaling"
+          churn_impact: "positive"
+          
+        maturity_status:
+          type: "categorical"
+          description: "Account maturity status"
+          categories: ["Active", "Near Maturity", "Matured"]
+          preprocessing: "ordinal_encoding"
+          churn_impact: "variable"
+
+preprocessing_config:
+  numerical_features:
+    scaling_method: "standard"
+    outlier_handling: "winsorize"
+    missing_value_strategy: "median"
+    
+  categorical_features:
+    encoding_method: "one_hot"
+    unknown_handling: "ignore"
+    missing_value_strategy: "mode"
+    
+  binary_features:
+    encoding_method: "binary"
+    missing_value_strategy: "mode"
+
+feature_selection:
+  strategy: "all_features"
+  driver_based_grouping: true
+  correlation_threshold: 0.85
+
+target_variables:
+  churn_probability:
+    type: "continuous"
+    description: "Probability of churn (0-1)"
+    usage: "regression_target"
+    
+  churn_risk:
+    type: "binary"
+    description: "High churn risk indicator"
+    usage: "classification_target"
+    threshold: 0.7

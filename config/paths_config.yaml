@@ -1,0 +1,109 @@
+# Root Directories
+project_root: "."
+data_root: "./data"
+models_root: "./models"
+logs_root: "./logs"
+ui_root: "./ui"
+powerbi_root: "./powerbi"
+notebooks_root: "./notebooks"
+docs_root: "./docs"
+tests_root: "./tests"
+deployment_root: "./deployment"
+
+# Data Paths
+data:
+  raw: "./data/raw"
+  processed: "./data/processed"
+  external: "./data/external"
+  interim: "./data/interim"
+  
+  files:
+    synthetic_customers: "./data/raw/synthetic_customers.csv"
+    transactions: "./data/raw/transactions_6months.csv"
+    products: "./data/raw/products_holdings.csv"
+    complaints: "./data/raw/complaints.csv"
+    schema: "./data/raw/schema.json"
+    
+    train_set: "./data/processed/train_set.csv"
+    val_set: "./data/processed/val_set.csv"
+    test_set: "./data/processed/test_set.csv"
+    feature_matrix: "./data/processed/feature_matrix.csv"
+    feature_matrix_encoded: "./data/processed/feature_matrix_encoded.csv"
+
+# Model Paths
+models:
+  production: "./models/production"
+  preprocessing: "./models/preprocessing"
+  explainability: "./models/explainability"
+  metadata: "./models/metadata"
+  validation: "./models/validation"
+  
+  files:
+    current_model: "./models/production/CURRENT_MODEL.txt"
+    model_registry: "./models/metadata/model_registry.json"
+    feature_schema: "./models/metadata/feature_schema.json"
+    driver_mapping: "./models/metadata/driver_to_features_mapping_v1.0.json"
+
+# Preprocessing Artifacts
+preprocessing:
+  scaler: "./models/preprocessing/scaler_v1.0.pkl"
+  label_encoders: "./models/preprocessing/label_encoders_v1.0.pkl"
+  feature_names: "./models/preprocessing/feature_names_v1.0.pkl"
+  categorical_mappings: "./models/preprocessing/categorical_mappings_v1.0.pkl"
+  preprocessing_pipeline: "./models/preprocessing/preprocessing_pipeline.pkl"
+
+# SHAP & Explainability
+explainability:
+  shap_explainer: "./models/explainability/shap_explainer_xgboost_v1.0.pkl"
+  shap_values: "./models/explainability/shap_values_test_set_v1.0.npy"
+  feature_importance: "./models/explainability/feature_importance_summary_v1.0.json"
+  top_drivers: "./models/explainability/top_drivers_v1.0.json"
+
+# Power BI Export Paths
+powerbi:
+  data: "./powerbi/data"
+  dashboard: "./powerbi/dashboard"
+  
+  files:
+    model_metrics: "./powerbi/data/model_metrics.csv"
+    predictions_data: "./powerbi/data/predictions_data.csv"
+    shap_values_summary: "./powerbi/data/shap_values_summary.csv"
+    driver_breakdown: "./powerbi/data/driver_breakdown.csv"
+    fairness_metrics: "./powerbi/data/fairness_metrics.csv"
+    customer_segments: "./powerbi/data/customer_segments.csv"
+
+# UI Assets
+ui:
+  assets: "./ui/assets"
+  components: "./ui/components"
+  
+  paths:
+    css: "./ui/assets/css"
+    images: "./ui/assets/images"
+    js: "./ui/assets/js"
+    sample_data: "./ui/assets/data"
+
+# Log Files
+logs:
+  training: "./logs/training.log"
+  inference: "./logs/inference.log"
+  drift: "./logs/data_drift.log"
+  errors: "./logs/errors.log"
+  audit: "./logs/audit_trail.csv"
+
+# Configuration Files
+config:
+  settings: "./config/settings.yaml"
+  model_params: "./config/model_params.json"
+  feature_config: "./config/feature_config.yaml"
+  business_rules: "./config/business_rules.yaml"
+  logging_config: "./config/logging_config.yaml"
+  paths: "./config/paths_config.yaml"
+
+# Test Fixtures
+tests:
+  fixtures: "./tests/fixtures"
+  
+  files:
+    sample_data: "./tests/fixtures/sample_data.pkl"
+    sample_model: "./tests/fixtures/sample_model.pkl"

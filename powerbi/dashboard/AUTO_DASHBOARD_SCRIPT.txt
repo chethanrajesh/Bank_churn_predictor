@@ -1,0 +1,63 @@
+
+// AUTO-GENERATED POWER BI DASHBOARD SCRIPT
+// This script automatically creates a 5-page churn prediction dashboard
+
+// Load all data sources
+let
+    Predictions = Csv.Document(File.Contents("D:\bank-churn-prediction\powerbi\data\predictions_data.csv"), [Delimiter=",", Columns=30, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+    ModelMetrics = Csv.Document(File.Contents("D:\bank-churn-prediction\powerbi\data\model_metrics.csv"), [Delimiter=",", Columns=10, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+    SHAPValues = Csv.Document(File.Contents("D:\bank-churn-prediction\powerbi\data\shap_values_summary.csv"), [Delimiter=",", Columns=10, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+    DriverBreakdown = Csv.Document(File.Contents("D:\bank-churn-prediction\powerbi\data\driver_breakdown.csv"), [Delimiter=",", Columns=10, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+    CustomerSegments = Csv.Document(File.Contents("D:\bank-churn-prediction\powerbi\data\customer_segments.csv"), [Delimiter=",", Columns=10, Encoding=65001, QuoteStyle=QuoteStyle.Csv])
+in
+    Predictions
+
+// DASHBOARD CREATION INSTRUCTIONS FOR POWER BI:
+// After loading data, manually create these 5 pages:
+
+// PAGE 1: Executive Overview
+// ---------------------------
+// Visual 1: 4 Card Visuals
+//   - Total Customers: Count of customer_id
+//   - High Risk Customers: Count where risk_segment = "High Risk"
+//   - Expected Loss: Sum of expected_loss
+//   - Model AUC: Lookup from ModelMetrics
+//
+// Visual 2: Pie Chart
+//   - Legend: risk_segment
+//   - Values: Count of customer_id
+//
+// Visual 3: Gauge
+//   - Value: Average of churn_probability
+//   - Min: 0, Max: 1, Target: 0.3
+
+// PAGE 2: Risk Analysis
+// ---------------------
+// Visual 1: Bar Chart - risk_segment by Customer Count
+// Visual 2: Scatter Plot - churn_probability vs expected_loss
+// Visual 3: Table - High Risk Customers (filter risk_segment = "High Risk")
+
+// PAGE 3: Driver Analysis
+// -----------------------
+// Visual 1: Horizontal Bar Chart - Top 10 features from SHAPValues
+// Visual 2: Treemap - driver_category from DriverBreakdown
+// Visual 3: Waterfall Chart - Top features by shap_importance
+
+// PAGE 4: Individual Analysis
+// ---------------------------
+// Visual 1: Slicers for risk_segment, region, account_type
+// Visual 2: Customer Details Table
+// Visual 3: Individual Risk Score Card
+
+// PAGE 5: Business Impact
+// -----------------------
+// Visual 1: Card Visuals for financial metrics
+// Visual 2: Stacked Bar - expected_loss by risk_segment
+// Visual 3: Matrix - Region × risk_segment × expected_loss
+
+// AI INSIGHTS TO HIGHLIGHT:
+// 1. Top 3 churn drivers from SHAP analysis
+// 2. High-risk customer segments
+// 3. Financial impact by region
+// 4. Model performance metrics
+// 5. Retention opportunity areas

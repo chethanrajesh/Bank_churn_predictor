@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_name": "Bank Customer Churn Prediction",
+  "description": "Schema for synthetic banking customer data with 52 features across 10 churn drivers",
+  "record_count": 10000,
+  "features": {
+    "customer_id": {
+      "type": "string",
+      "description": "Unique customer identifier",
+      "format": "CUST_XXXXXX",
+      "required": true,
+      "unique": true
+    },
+    "age": {
+      "type": "integer",
+      "description": "Customer age in years",
+      "min_value": 18,
+      "max_value": 80,
+      "required": true
+    },
+    "income": {
+      "type": "float",
+      "description": "Annual income in INR",
+      "min_value": 10000,
+      "max_value": 200000,
+      "required": true
+    },
+    "region": {
+      "type": "categorical",
+      "description": "Indian city where customer is located",
+      "categories": [
+        "Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai", 
+        "Kolkata", "Pune", "Ahmedabad", "Jaipur", "Lucknow",
+        "Surat", "Kanpur", "Nagpur", "Patna", "Indore",
+        "Thane", "Bhopal", "Visakhapatnam", "Vadodara", "Ludhiana"
+      ],
+      "required": true
+    },
+    "occupation_type": {
+      "type": "categorical",
+      "description": "Type of occupation",
+      "categories": ["Professional", "Service", "Business", "Retired", "Student"],
+      "required": true
+    },
+    "customer_since": {
+      "type": "datetime",
+      "description": "Date when customer joined the bank",
+      "format": "YYYY-MM-DD",
+      "required": true
+    },
+    "account_type": {
+      "type": "categorical",
+      "description": "Type of bank account",
+      "categories": [
+        "Savings Account", "Salary Account", "Current Account", 
+        "Fixed Deposit", "Recurring Deposit", "NRI Account",
+        "Senior Citizen Account", "Student Account", "Basic Savings"
+      ],
+      "required": true
+    }
+  },
+  "churn_drivers": {
+    "low_engagement": {
+      "description": "Driver 1: Low customer engagement and activity",
+      "features": [
+        "total_transactions", "login_frequency", "app_usage_minutes", 
+        "days_since_last_login", "customer_service_calls", "activity_score"
+      ]
+    },
+    "high_fees": {
+      "description": "Driver 2: High fees and penalty charges",
+      "features": [
+        "avg_monthly_fees", "overdraft_frequency", "penalty_charges", 
+        "fee_to_balance_ratio", "overdraft_amount"
+      ]
+    },
+    "poor_service": {
+      "description": "Driver 3: Poor service quality and complaints",
+      "features": [
+        "num_complaints", "complaint_resolution_days", "satisfaction_score", 
+        "escalation_count", "service_quality_rating"
+      ]
+    },
+    "low_product_holding": {
+      "description": "Driver 4: Low product diversification",
+      "features": [
+        "num_products", "has_credit_card", "has_mortgage", 
+        "has_investment_account", "has_insurance", "product_diversity_score"
+      ]
+    },
+    "short_tenure": {
+      "description": "Driver 5: Short customer tenure",
+      "features": [
+        "tenure_months", "balance_growth_rate", "is_new_customer", 
+        "tenure_segment", "age_group"
+      ]
+    },
+    "balance_fluctuations": {
+      "description": "Driver 6: Account balance fluctuations",
+      "features": [
+        "avg_account_balance", "balance_trend", "balance_volatility", 
+        "salary_consistency", "withdrawal_ratio"
+      ]
+    },
+    "demographics": {
+      "description": "Driver 7: Demographic characteristics",
+      "features": [
+        "income_bracket", "digital_adoption", "family_size", 
+        "education_level", "marital_status"
+      ]
+    },
+    "credit_issues": {
+      "description": "Driver 8: Credit and loan problems",
+      "features": [
+        "credit_score", "credit_utilization", "num_loan_defaults", 
+        "debt_to_income", "credit_inquiry_count"
+      ]
+    },
+    "personalization_offers": {
+      "description": "Driver 9: Personalization and offer engagement",
+      "features": [
+        "promotions_sent", "promotion_response_rate", "reward_points", 
+        "personalized_offers_count", "offer_relevance_score"
+      ]
+    },
+    "contract_events": {
+      "description": "Driver 10: Account contract events",
+      "features": [
+        "account_age_months", "maturity_proximity_days", "renewal_flag", 
+        "account_closure_requests", "maturity_status"
+      ]
+    }
+  },
+  "target_variables": {
+    "churn_probability": {
+      "type": "float",
+      "description": "Probability of customer churn (0-1)",
+      "min_value": 0,
+      "max_value": 1,
+      "required": true
+    },
+    "churn_risk": {
+      "type": "binary",
+      "description": "Binary churn risk indicator (1=high risk, 0=low risk)",
+      "categories": [0, 1],
+      "required": true
+    }
+  },
+  "data_quality_rules": {
+    "completeness": {
+      "max_missing_percentage": 5,
+      "required_fields": ["customer_id", "age", "income", "churn_risk"]
+    },
+    "validity": {
+      "age_range": [18, 80],
+      "income_min": 0,
+      "credit_score_range": [300, 850]
+    },
+    "consistency": {
+      "tenure_consistency": "tenure_months should be consistent with customer_since",
+      "age_consistency": "age_group should match age ranges"
+    }
+  },
+  "version_history": {
+    "1.0.0": {
+      "date": "2024-01-01",
+      "changes": "Initial schema definition for 52 features across 10 churn drivers"
+    }
+  }
+}

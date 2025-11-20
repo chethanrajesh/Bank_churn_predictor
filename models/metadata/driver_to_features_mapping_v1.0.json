@@ -1,0 +1,301 @@
+{
+  "Low Engagement": {
+    "description": "Customer activity and engagement levels",
+    "keywords": [
+      "transaction",
+      "login",
+      "activity",
+      "usage",
+      "calls",
+      "frequency",
+      "score",
+      "last_login",
+      "service_calls"
+    ],
+    "features": [
+      "activity_score",
+      "app_usage_minutes",
+      "credit_score",
+      "customer_service_calls",
+      "days_since_last_login",
+      "login_frequency",
+      "overdraft_frequency",
+      "product_diversity_score",
+      "satisfaction_score",
+      "total_transactions"
+    ],
+    "business_impact": "High",
+    "mitigation_strategy": "Increase engagement through personalized communication and rewards",
+    "feature_count": 10
+  },
+  "High Fees": {
+    "description": "Fee-related charges and penalties",
+    "keywords": [
+      "fee",
+      "overdraft",
+      "penalty",
+      "charge",
+      "amount",
+      "ratio",
+      "monthly_fees"
+    ],
+    "features": [
+      "avg_monthly_fees",
+      "fee_to_balance_ratio",
+      "overdraft_amount",
+      "overdraft_frequency",
+      "penalty_charges",
+      "withdrawal_ratio"
+    ],
+    "business_impact": "High",
+    "mitigation_strategy": "Review fee structure, offer fee waivers for loyal customers",
+    "feature_count": 6
+  },
+  "Poor Service": {
+    "description": "Service quality and complaint history",
+    "keywords": [
+      "complaint",
+      "satisfaction",
+      "service",
+      "resolution",
+      "escalation",
+      "quality",
+      "rating"
+    ],
+    "features": [
+      "complaint_resolution_days",
+      "customer_service_calls",
+      "escalation_count",
+      "num_complaints",
+      "occupation_type_Service",
+      "satisfaction_score",
+      "service_quality_rating"
+    ],
+    "business_impact": "Medium",
+    "mitigation_strategy": "Improve service quality, reduce resolution time",
+    "feature_count": 7
+  },
+  "Low Product Holding": {
+    "description": "Product diversification and cross-selling",
+    "keywords": [
+      "product",
+      "credit_card",
+      "mortgage",
+      "investment",
+      "insurance",
+      "diversity",
+      "has_"
+    ],
+    "features": [
+      "has_credit_card",
+      "has_insurance",
+      "has_investment_account",
+      "has_mortgage",
+      "num_products",
+      "product_diversity_score"
+    ],
+    "business_impact": "Medium",
+    "mitigation_strategy": "Cross-selling campaigns, product bundles",
+    "feature_count": 6
+  },
+  "Short Tenure": {
+    "description": "Customer relationship duration and lifecycle",
+    "keywords": [
+      "tenure",
+      "customer_since",
+      "new_customer",
+      "segment",
+      "age_group",
+      "months",
+      "years"
+    ],
+    "features": [
+      "age_group",
+      "customer_since",
+      "is_new_customer",
+      "tenure_months",
+      "tenure_segment"
+    ],
+    "business_impact": "Medium",
+    "mitigation_strategy": "Onboarding programs, early engagement initiatives",
+    "feature_count": 5
+  },
+  "Balance Fluctuations": {
+    "description": "Account balance stability and transaction patterns",
+    "keywords": [
+      "balance",
+      "salary",
+      "volatility",
+      "withdrawal",
+      "trend",
+      "consistency",
+      "ratio",
+      "avg_",
+      "account_balance"
+    ],
+    "features": [
+      "account_type_Salary Account",
+      "avg_account_balance",
+      "avg_monthly_fees",
+      "balance_growth_rate",
+      "balance_trend",
+      "balance_volatility",
+      "fee_to_balance_ratio",
+      "salary_consistency",
+      "withdrawal_ratio"
+    ],
+    "business_impact": "Medium",
+    "mitigation_strategy": "Balance alerts, savings products",
+    "feature_count": 9
+  },
+  "Demographics": {
+    "description": "Customer demographic characteristics",
+    "keywords": [
+      "age",
+      "income",
+      "region",
+      "occupation",
+      "education",
+      "marital",
+      "family",
+      "bracket",
+      "level",
+      "status"
+    ],
+    "features": [
+      "age",
+      "age_group",
+      "app_usage_minutes",
+      "debt_to_income",
+      "education_level_Bachelor",
+      "education_level_High School",
+      "education_level_Master",
+      "education_level_PhD",
+      "family_size",
+      "has_mortgage",
+      "income",
+      "income_bracket",
+      "marital_status_Divorced",
+      "marital_status_Married",
+      "marital_status_Single",
+      "marital_status_Widowed",
+      "occupation_type_Business",
+      "occupation_type_Professional",
+      "occupation_type_Retired",
+      "occupation_type_Service",
+      "occupation_type_Student",
+      "region_Ahmedabad",
+      "region_Bangalore",
+      "region_Bhopal",
+      "region_Chennai",
+      "region_Delhi",
+      "region_Hyderabad",
+      "region_Indore",
+      "region_Jaipur",
+      "region_Kanpur",
+      "region_Kolkata",
+      "region_Lucknow",
+      "region_Ludhiana",
+      "region_Mumbai",
+      "region_Nagpur",
+      "region_Patna",
+      "region_Pune",
+      "region_Surat",
+      "region_Thane",
+      "region_Vadodara",
+      "region_Visakhapatnam"
+    ],
+    "business_impact": "Low",
+    "mitigation_strategy": "Segmented marketing, personalized offers",
+    "feature_count": 41
+  },
+  "Credit Issues": {
+    "description": "Credit history and debt management",
+    "keywords": [
+      "credit",
+      "debt",
+      "loan",
+      "inquiry",
+      "default",
+      "utilization",
+      "score",
+      "dtl",
+      "debt_to_income"
+    ],
+    "features": [
+      "activity_score",
+      "credit_inquiry_count",
+      "credit_score",
+      "credit_utilization",
+      "debt_to_income",
+      "has_credit_card",
+      "num_loan_defaults",
+      "product_diversity_score",
+      "satisfaction_score"
+    ],
+    "business_impact": "High",
+    "mitigation_strategy": "Credit counseling, debt restructuring",
+    "feature_count": 9
+  },
+  "Personalization & Offers": {
+    "description": "Marketing engagement and personalization",
+    "keywords": [
+      "promotion",
+      "reward",
+      "offer",
+      "personalized",
+      "relevance",
+      "response",
+      "points",
+      "sent"
+    ],
+    "features": [
+      "promotion_response_rate",
+      "promotions_sent",
+      "reward_points"
+    ],
+    "business_impact": "Medium",
+    "mitigation_strategy": "Improved targeting, personalized communication",
+    "feature_count": 3
+  },
+  "Contract Events": {
+    "description": "Account events and contractual milestones",
+    "keywords": [
+      "account_age",
+      "maturity",
+      "renewal",
+      "closure",
+      "status",
+      "proximity",
+      "flag",
+      "maturity_proximity"
+    ],
+    "features": [
+      "marital_status_Divorced",
+      "marital_status_Married",
+      "marital_status_Single",
+      "marital_status_Widowed"
+    ],
+    "business_impact": "Medium",
+    "mitigation_strategy": "Proactive renewal reminders, retention offers",
+    "feature_count": 4
+  },
+  "Uncategorized": {
+    "description": "Features not categorized into specific drivers",
+    "keywords": [],
+    "features": [
+      "account_type_Basic Savings",
+      "account_type_Current Account",
+      "account_type_Fixed Deposit",
+      "account_type_NRI Account",
+      "account_type_Recurring Deposit",
+      "account_type_Savings Account",
+      "account_type_Senior Citizen Account",
+      "account_type_Student Account",
+      "digital_adoption"
+    ],
+    "business_impact": "Unknown",
+    "mitigation_strategy": "Needs analysis",
+    "feature_count": 9
+  }
+}
